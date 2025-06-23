@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Love Me. Love Us.</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="Events.css">
+</head>
+
+<body>
+  <header>
+    <div class="hero-banner">
+        <img src="Images/donate.avif" alt="About Banner" class="hero-bg">
+      </div>
+
+    <nav class="nav-bar">
+      <div class="hamburger" onclick="toggleMobileMenu()">☰</div>
+      <div class="nav-group left-nav">
+        <a href="Resources.html">Resources</a>
+        <a href="News.html">News</a>
+        <a href="Volunteer.html">Volunteer</a>
+      </div>
+      <div class="nav-group logo-nav">
+        <a href="Home.html" class="logo-link">
+          <div class="logo-bg">
+            <img src="Images/Logo.avif" alt="Logo" class="logo">
+          </div>
+        </a>
+      </div>
+      <div class="nav-group right-nav">
+        <a href="Events.html">Events</a>
+        <a href="Donate.html">Donate</a>
+        <a href="About.html" class="active">About</a>
+      </div>
+    </nav>
+
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="Resources.html">Resources</a>
+      <a href="News.html">News</a>
+      <a href="Volunteer.html">Volunteer</a>
+      <a href="Events.html">Events</a>
+      <a href="Donate.html">Donate</a>
+      <a href="About.html">About</a>
+    </div>
+  </header>
+
+  <div class="events-hero-text">
+    <h1>UPCOMING<br><span class="events-sub">EVENTS</span></h1>
+  </div> 
+
+  <!-- EVENTS PAGE MAIN SECTION -->
+ <main class="events-section">
+    <section class="events-info">
+      <h3>Discover Our Upcoming Camps & Events</h3>
+      <p>
+        Join us for an exciting lineup of music, art, and sports camps—designed to inspire and engage participants of all ages! Explore event details, dates, locations, and registration info. Stay connected, get involved, and create unforgettable memories with us!
+      </p>
+      
+     <section class="event-blocks">
+    
+    <!-- Silent Auction + Senior Grad Party -->
+    <div class="event-row">
+        <div class="event-image" style="background-image: url('Images/LMLU\ Senior\ Grad\ \(3\).png'); cursor: pointer;" onclick="openModal('Images/LMLU\ Senior\ Grad\ \(3\).png')"></div>
+    
+        <div class="event-info">
+        <p><strong>Silent Auction + Senior Grad Party</strong><br>
+            📅 <strong>Date:</strong> June 7, 2025, 9:00 AM – 1:00 PM<br>
+            📍 <strong>Address:</strong> Sammamish Hills Lutheran Church - 22818 SE 8th St, Sammamish, WA 98074
+        </p>
+        <button onclick="window.location.href='parent-signup-link.html'">Parent Sign Up</button>
+        <button onclick="window.location.href='volunteer-signup-link.html'">Volunteer Sign Up</button>
+        </div>
+    </div>
+  
+    <!-- Mid-Autumn Festival Event -->
+    <div class="event-row">
+        <div class="event-image" style="background-image: url('Images/midautumn.avif'); cursor: pointer;" onclick="openModal('Images/midautumn.avif')"></div>
+        <div class="event-info">
+        <p><strong>Mid-Autumn Festival Celebration</strong><br>
+            📅 <strong>Date:</strong> Sep 21, 2024, 1:00 PM – 3:00 PM<br>
+            📍 <strong>Address:</strong> Sammamish Hills Lutheran Church - 22818 SE 8th St, Sammamish, WA 98074, USA
+        </p>
+        <button onclick="window.location.href='docs.google.com/forms/d/e/1FAIpQLSe77-z2Cm1UdZ9gP84v2fNXD6tMVVapHDEnH8Cl8sLa7Ni5IQ/closedform'">Parent Sign Up</button>
+        <button onclick="window.location.href='forms.gle/mJaTwotUaojEcfxY8'">Volunteer Sign Up</button>
+        </div>
+    </div>
+  
+  </section>
+</main>
+
+  <div class="newsletter">
+    <p><strong>Stay Connected! Subscribe to our Newsletter 📫</strong></p>
+    <input type="email" placeholder="Email Address" id="emailInput">
+    <button onclick="submitEmail()">Submit</button>
+  </div>
+
+<footer>
+  <div><a href="mailto:admin@lovemeloveus.org">admin@lovemeloveus.org</a></div>
+  <div>+1 (425) 298-7866</div>
+  <div>@lovemeloveus</div>
+</footer>
+
+<!-- Modal for image expansion -->
+<div id="flyerModal" class="modal" onclick="closeModal()">
+    <span class="close">&times;</span>
+    <img class="modal-content" id="modalImage">
+  </div>
+
+<script src="Nav.js"></script>
+<script>
+    function openModal(imageSrc) {
+      document.getElementById("modalImage").src = imageSrc;
+      document.getElementById("flyerModal").style.display = "block";
+    }
+    function closeModal() {
+      document.getElementById("flyerModal").style.display = "none";
+    }
+</script>    
+</body>
+</html>

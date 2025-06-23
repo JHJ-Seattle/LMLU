@@ -1,0 +1,508 @@
+/* -------- Global Styles -------- */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #fff5eb;
+    color: #5e3c29;
+  }
+  
+  .container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 auto;
+  }
+  
+  /* -------- Nav Bar -------- */
+  .nav-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f9b233;
+    padding: 0 30px;
+    height: auto;
+    position: absolute;
+    top: 30px;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    z-index: 10;
+    flex-wrap: wrap;
+  }
+  
+  .nav-group {
+    display: flex;
+    flex: 1;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .left-nav,
+  .right-nav {
+    display: flex;
+    flex: 1;
+    justify-content: space-evenly;
+    gap: 20px;
+  }
+  
+  .nav-bar a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: color 0.2s ease;
+  }
+  
+  .nav-bar a:hover {
+    color: #5e3c29;
+    background-color: rgba(255,255,255,0.2);
+    border-radius: 4px;
+    padding: 4px 8px; 
+  }
+  
+  .logo-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 70px; /* restore original spacing */
+    flex: 0 0 auto;
+    overflow: visible;
+    z-index: 10;
+  }
+  
+  .logo-bg {
+    background-color: white;
+    width: 50px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    margin-top: 10px;
+    z-index: 1;
+  }
+  
+  .logo {
+    height: 110px;        /* restore original size */
+    width: auto;
+    margin-top: -10px;
+    z-index: 2;
+  }
+  
+  /* Hamburger icon (hidden by default) */
+  .hamburger {
+    display: none;
+  }
+  
+  /* Mobile dropdown */
+  .mobile-menu {
+    display: none;
+  }
+  
+  /* -------- Hero Banner -------- */
+  .hero-banner {
+    position: relative;
+    height: 500px;
+    width: 100%;
+    overflow: hidden;
+    z-index: 0;
+  }
+  
+  .hero-banner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top 25%; /* This centers the image */
+    opacity: 0.55;
+    display: block;
+  }  
+  
+  /* Newsletter Form */
+  .newsletter {
+    background-color: #fff;
+    border: 2px solid #ceb8a7;
+    padding: 20px;
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto 50px;
+    border-radius: 8px;
+    color: #5e3c29;
+    margin-top: 30px;
+    font-size: 1rem;
+    line-height: 1.4;
+  }
+  
+  .newsletter input {
+    padding: 8px;
+    width: 60%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .newsletter button {
+    padding: 8px 12px;
+    background-color: #e98a1e;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  /* -------- Footer -------- */
+  footer {
+    background-color: #f9c873;
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    color: #5e3c29;
+    font-weight: bold;
+    flex-wrap: wrap;
+    text-align: center;
+  }
+  
+  footer a {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  /* Donate Page */
+  .donate-hero-text {
+    position: absolute;
+    top: 50%;
+    left: 120px;
+    transform: translateY(-50%);
+    z-index: 2;
+    color: #5e3c29;
+    font-size: 2.5rem;
+  }
+  
+  .donate-hero-text h1 {
+    font-size: 3.5rem;
+    line-height: 0.9;
+  }
+  
+  .donate-hero-text .donate-sub {
+    display: inline-block;
+    margin-left: 39px; /* Indents only the second line */
+  }  
+  
+  .donate-info h3 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom: 25px;
+  }
+  
+  .donate-info p {
+    max-width: 1000px;
+    margin: 0 auto 40px;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    text-align: center;
+  }
+  
+  .donate-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .donate-circle {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: none;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #5e3c29;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+  }
+  
+  .donate-circle:hover {
+    transform: scale(1.05);
+  }
+
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 999;
+    left: 0; top: 0;
+    width: 100%; height: 100%;
+    background-color: rgba(0,0,0,0.6);
+  }
+  
+  .modal-content {
+    background-color: white;
+    margin: 15% auto;
+    padding: 20px;
+    width: 90%;
+    max-width: 400px;
+    text-align: center;
+    border-radius: 10px;
+    position: relative;
+  }
+  
+  .modal-content .close {
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    font-size: 24px;
+    cursor: pointer;
+  }  
+  
+  /* Color classes */
+  .yellow { background-color: #fde47f; }
+  .gold { background-color: #f9b233; }
+  .orange { background-color: #fa812f; }
+  .red { background-color: #fa4032; }
+  .custom { background-color: #d94f2a; color: #fff; }
+  
+  /* Fundraising Section */
+  .fundraising-section {
+    background-color: #fff5eb;
+    color: #5e3c29;
+    text-align: center;
+    padding: 60px 20px;
+  }
+  
+  .fundraising-section h3 {
+    font-size: 2rem;
+    margin-top: -40px;
+    margin-bottom: 25px;
+  }
+  
+  .fundraising-section p {
+    max-width: 1000px;
+    margin: 0 auto 40px;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 40px;
+  }
+  
+  .artist-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 50px 30px;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .artist-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .artist-photo {
+    width: 270px;
+    height: 270px;
+    margin-bottom: 16px;
+    background-color: #ccc;
+    background-size: cover;
+    background-position: center;
+    border-radius: 12px; /* This creates rounded corners */
+    transition: transform 0.3s ease;
+  }
+  
+  .artist-photo:hover {
+    transform: scale(1.05);
+  }
+  
+  .artist-name {
+    font-weight: bold;
+    font-size: 1.3rem !important;
+  }
+  
+  .artist-bio {
+    font-size: 0.9rem !important;       /* smaller font */
+    margin-top: -30px !important;          /* reduce space from photo */
+    margin-bottom: 0px !important;
+  }
+  
+  /* Divider */
+  .section-divider {
+    border: none;
+    border-top: 1px solid #ccc;
+    margin: 60px auto;
+    max-width: 70%;
+    margin-top: 80px;
+  }
+
+  /* -------- Mobile Styles -------- */
+@media (max-width: 768px) {
+    .nav-bar {
+      position: absolute; /* not fixed */
+      top: 20px;           /* gap from top of screen */
+      left: 0;
+      right: 0;
+      background-color: #f9b233;
+      z-index: 999;
+      height: auto;
+      padding: 10px 20px;
+      box-sizing: border-box;
+    }
+  
+    .logo-nav {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 2;
+    }
+  
+    .logo {
+      height: 110px;
+    }
+  
+    .logo-bg {
+      width: 50px;
+      height: 35px;
+    }
+  
+    .hero-banner {
+      height: 250px;
+      position: relative;
+      z-index: 0;
+      margin-top: 0; /* KEY: no margin pushing it down */
+    }
+  
+    .hero-banner img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: top center;
+      z-index: -1;
+    }
+
+    .left-nav, .right-nav {
+        display: none;
+      }
+    
+      .hamburger {
+        display: block;
+        order: -1;
+        font-size: 2rem;
+        cursor: pointer;
+        color: white;
+      }
+    
+      .mobile-menu {
+        display: none;
+        flex-direction: column;
+        background-color: #f9b233;
+        padding: 10px 20px;
+      }
+    
+      .mobile-menu.show {
+        display: flex;
+      }
+    
+      .mobile-menu a {
+        padding: 10px 0;
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+        border-bottom: 1px solid rgba(255,255,255,0.3);
+      }
+
+      .newsletter {
+        margin: 40px auto 60px; /* Adds left & right space */
+        padding: 20px;
+        width: 79%;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        gap: 10px;
+      }      
+    
+      .newsletter input,
+      .newsletter button {
+        width: 100% !important;
+        box-sizing: border-box;
+      }
+    
+      footer {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        padding: 20px 10px;
+        text-align: center;
+      }
+    
+      footer div {
+        width: 100%;
+        margin-bottom: 10px;
+      }
+
+      .donate-hero-text {
+        position: absolute;
+        top: 25%;
+        left: 20px;
+        transform: translateY(-50%);
+        z-index: 2;
+        color: #5e3c29;
+        font-size: 2.5rem;
+      }
+    
+      .donate-hero-text h1 {
+        font-size: 2rem;
+      }
+
+      .donate-info {
+        margin: 60px 10px;;
+        padding: 0 20px;
+      }
+
+      .donate-info h3 {
+        font-size: 1.6rem;
+      }
+
+      .donate-buttons {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 16px;
+      }
+      
+      .donate-circle {
+        width: 130px;
+        height: 130px;
+        font-size: 1.2rem;
+      }      
+      
+      /* To center the last 2 buttons across the 3-column layout */
+      .donate-circle.red {
+        grid-column: 2 / 3; /* centers $100 */
+      }
+      
+      .donate-circle.custom {
+        grid-column: 3 / 4; /* aligns custom to the right */
+      }      
+      
+      /* Fundraising section mobile */
+      .fundraising-section {
+        padding: 40px 20px;
+      }
+      
+      .fundraising-section h3 {
+        font-size: 1.6rem;
+        margin-top: -30px;
+      }
+      
+      .fundraising-section p {
+        font-size: 1rem;
+        line-height: 1.6;
+        padding: 0 10px;
+        margin-bottom: 30px;
+      }
+    }

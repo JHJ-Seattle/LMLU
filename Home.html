@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Love Me. Love Us.</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="Home.css">
+</head>
+
+<body>
+  <!-- HEADER IMAGE COLLAGE BEHIND NAV BAR -->
+  <div class="header-banner">
+    <div class="header-images">
+      <img src="Images/h1.jpg" alt="img1">
+      <img src="Images/h2.jpg" alt="img2">
+      <img src="Images/h3.jpg" alt="img3">
+    </div>
+  </div>
+
+    <header>
+        <nav class="nav-bar">
+          <!--Mobile-->
+          <div class="hamburger" onclick="toggleMobileMenu()">☰</div>
+          <!--Desktop-->
+          <div class="nav-group left-nav">
+            <a href="Resources.html">Resources</a>
+            <a href="News.html">News</a>
+            <a href="Volunteer.html">Volunteer</a>
+          </div>
+
+          <div class="nav-group logo-nav">
+    <a href="Home.html" class="logo-link">
+      <div class="logo-bg">
+        <img
+          src="Images/Logo.avif"
+          alt="Logo"
+          class="logo"
+        />
+      </div>
+    </a>
+  </div>
+
+          <div class="nav-group right-nav">
+            <a href="Events.html">Events</a>
+            <a href="Donate.html">Donate</a>
+            <a href="About.html" class="active">About</a>
+          </div>
+        </nav>
+
+        <!-- Mobile dropdown menu -->
+        <div class="mobile-menu" id="mobileMenu">
+          <a href="Resources.html">Resources</a>
+          <a href="News.html">News</a>
+          <a href="Volunteer.html">Volunteer</a>
+          <a href="Events.html">Events</a>
+          <a href="Donate.html">Donate</a>
+          <a href="About.html">About</a>
+
+      </div>
+      
+    <div class="container">
+
+      <div class="tagline">
+        <h1>
+          <span class="love1">LOVE</span> <span class="me">ME</span><span class="dot">.</span>
+          <span class="love2">LOVE</span> <span class="us">US</span><span class="dot">.</span>
+        </h1>
+        <p class="mission">
+          We believe that every individual deserves love, support, and the opportunity to thrive in a nurturing environment.
+          Our mission is to create a community where each child feels valued and cared for, and where the broader special needs
+          community is welcomed with open arms. We are committed to celebrating individual uniqueness while building meaningful
+          connections and a strong sense of togetherness.
+        </p>
+      </div>
+    </header>
+
+    <div class="image-collage">
+      <img src="Images/h4.jpg" class="img1" alt="...">
+      <img src="Images/h5.jpg" class="img2" alt="...">
+      <img src="Images/h6.jpg" class="img3" alt="...">
+      <img src="Images/h7.jpg" class="img4" alt="...">
+      <img src="Images/h8.avif" class="img5" alt="...">
+      <img src="Images/h9.jpg" class="img6" alt="...">
+    </div>
+
+    <hr class="section-divider">
+
+    <main>
+      <section>
+        <h2>OUR PROGRAMS</h2>
+        <div class="programs-grid">
+            <div class="program-card art">
+              <h3>🎨  Love Art</h3>
+              <p>Through free art workshops, we inspire children with special needs to explore their creativity, express themselves, and strengthen their fine motor skills.</p>
+            </div>
+            <div class="program-card sports">
+              <h3>⚽  Love Sports</h3>
+              <p>Our free basketball and soccer camps help children with special needs stay active, gain confidence, and build meaningful mentor relationships through teamwork and play.</p>
+            </div>
+            <div class="program-card learning">
+              <h3>📚  Love Learning</h3>
+              <p>We offer free one-on-one tutoring, both virtually and in person, supporting academic growth and forming lasting connections between students and mentors.</p>
+            </div>
+            <div class="program-card music">
+              <h3>🎵  Love Music</h3>
+              <p>Our enriching music camps give children with special needs the chance to experience rhythm, movement, and joy while developing a love for music.</p>
+            </div>
+            <div class="program-card baking">
+              <h3>🧑‍🍳  Baking Lab</h3>
+              <p>Children gain hands-on experience in baking, enhancing sensory and motor skills while learning teamwork and independence in a fun, supportive environment.</p>
+            </div>
+          </div>
+          
+      </section>
+
+      <hr class="section-divider">
+
+      <section class="testimonials">
+        <h2>What Parents Are Saying</h2>
+        <div class="testimonial-cards">
+          <div class="testimonial-card">
+            <p><strong>Love Me. Love Us.</strong> provides a very safe environment and also a very loving and supportive environment... it’s far better than any other experience we’ve had.”</p>
+            <span>- Parent of a Love Me Love Us participant</p></span>
+          </div>
+          <div class="testimonial-card">
+            <p>“His interest are very limited so it’s very hard to find group activities for
+                him. [Love Me Love Us] is great because he has lots of fun here
+                and always looks forward to joining each Thursday.”</p>
+            <span>- Parent of a Love Me Love Us participant</span>
+          </div>
+          <div class="testimonial-card">
+            <p>“They welcome you with a smile and they come prepared...It’s an
+                opportunity for me to have a break and an opportunity for my son to be
+                social too.”</p>
+            <span>- Parent of a Love Me Love Us participant</span>
+          </div>
+        </div>
+      </section>
+      
+
+      <div class="newsletter">
+        <p><strong>Stay Connected! Subscribe to our Newsletter 📬</strong></p>
+        <input type="email" placeholder="Email Address" id="emailInput">
+        <button onclick="submitEmail()">Submit</button>
+      </div>
+    </main>
+
+  </div> <!-- end container -->
+  
+    <footer>
+      <div><a href="mailto:admin@lovemeloveus.org">admin@lovemeloveus.org</a></div>
+      <div>+1 (425) 298-7866</div>
+      <div>@lovemeloveus</div>
+    </footer>
+
+  <script src="Nav.js"></script>
+</body>
+</html>

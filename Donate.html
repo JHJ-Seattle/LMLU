@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Love Me. Love Us.</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="Donate.css">
+</head>
+
+<body>
+  <header>
+    <div class="hero-banner">
+        <img src="Images/donate.avif" alt="About Banner" class="hero-bg">
+      </div>
+
+    <nav class="nav-bar">
+      <div class="hamburger" onclick="toggleMobileMenu()">☰</div>
+      <div class="nav-group left-nav">
+        <a href="Resources.html">Resources</a>
+        <a href="News.html">News</a>
+        <a href="Volunteer.html">Volunteer</a>
+      </div>
+      <div class="nav-group logo-nav">
+        <a href="Home.html" class="logo-link">
+          <div class="logo-bg">
+            <img src="Images/Logo.avif" alt="Logo" class="logo">
+          </div>
+        </a>
+      </div>
+      <div class="nav-group right-nav">
+        <a href="Events.html">Events</a>
+        <a href="Donate.html">Donate</a>
+        <a href="About.html" class="active">About</a>
+      </div>
+    </nav>
+
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="Resources.html">Resources</a>
+      <a href="News.html">News</a>
+      <a href="Volunteer.html">Volunteer</a>
+      <a href="Events.html">Events</a>
+      <a href="Donate.html">Donate</a>
+      <a href="About.html">About</a>
+    </div>
+  </header>
+
+  <div class="donate-hero-text">
+    <h1>Support Inclusion,<br><span class="donate-sub">Empower Potential.</span></h1>
+  </div>  
+
+  <section class="donate-info">
+    <h3>Donate to Support Our Cause</h3>
+    <p>
+      With your support, we provide art, music, sports, and tutoring programs for children with developmental disabilities—
+      creating a community where every child is seen, heard, and celebrated.
+    </p>
+
+    <div class="donate-buttons">
+        <button class="donate-circle yellow" onclick="openZelleModal(10)">$10</button>
+        <button class="donate-circle gold" onclick="openZelleModal(25)">$25</button>
+        <button class="donate-circle orange" onclick="openZelleModal(50)">$50</button>
+        <button class="donate-circle red" onclick="openZelleModal(100)">$100</button>
+        <button class="donate-circle custom" onclick="openZelleModal('Custom')">CUSTOM</button>
+      </div>
+  </section>
+
+  <hr class="section-divider">
+      
+ <section class="fundraising-section">
+
+  <h3>Fundraising For Love</h3>
+  <p>
+    We fund our programs through creative fundraising, including art show tickets, handmade merchandise by our special artists,
+    and the sale of donated second-hand goods from the community. Shop our artists below by clicking their picture!
+  </p>
+
+  <div class="artist-grid">
+    
+    <div class="artist-card">
+      <a href="https://givebutter.com/c/LoveMeLoveUs/auction/categories/17671/jeannie-lin"><div class="artist-photo" style="background-image: url('Images/jeannie.avif');"></div></a>
+      <p class="artist-name">Jeannie Lin</p>
+      <p class="artist-bio">
+        Jeannie began sewing handcrafted bags to support Love Me Love Us, turning creativity into a way to spread love.
+        Today, she continues to share her time and talents as a devoted volunteer.
+      </p>
+    </div>
+
+    <div class="artist-card">
+      <a href="https://givebutter.com/c/LoveMeLoveUs/auction/categories/17717/james-huang"><div class="artist-photo" style="background-image: url('Images/james.avif');"></div></a>
+      <p class="artist-name">James Huang</p>
+      <p class="artist-bio">
+        Diagnosed with Down syndrome at birth, he has become a shining star in every way. His artistic talent and unique
+        style have also made him a featured artist for Love Me Love Us.
+      </p>
+    </div>
+
+    <div class="artist-card">
+      <a href="https://givebutter.com/c/LoveMeLoveUs/auction/categories/19748/ethan-guo"><div class="artist-photo" style="background-image: url('Images/ethan.png');"></div></a>
+      <p class="artist-name">Ethan Guo</p>
+      <p class="artist-bio">
+        A natural-born artist, Ethan has a unique eye for detail, creating textured lines and a distinctive style all his own. As one of our most prolific artists, he captures his world with just a single pen.
+      </p>
+    </div>
+
+    <div class="artist-card">
+      <a href="https://givebutter.com/c/LoveMeLoveUs/auction/categories/19750/alice-ni"><div class="artist-photo" style="background-image: url('Images/alice.avif');"></div></a>
+      <p class="artist-name">Alice Ni</p>
+      <p class="artist-bio">
+        Having grown up in the LMLU community, it was during art camp that her remarkable talent was discovered. Alice expresses herself through bold, vibrant artwork and a distinct eye for color.
+      </p>
+    </div>
+
+    <div class="artist-card">
+      <a href="https://givebutter.com/c/LoveMeLoveUs/auction/categories/19749/nathan-tian"><div class="artist-photo" style="background-image: url('Images/nathan.avif');"></div></a>
+      <p class="artist-name">Nathan Tian</p>
+      <p class="artist-bio">
+        Having also grown up in the LMLU community, it was during art camp that his amazing talent was discovered. Nathan has a deep passion for drawing and unwavering dedication to his art
+      </p>
+    </div>
+  </div>
+  
+</section>
+
+  <div class="newsletter">
+    <p><strong>Stay Connected! Subscribe to our Newsletter 📫</strong></p>
+    <input type="email" placeholder="Email Address" id="emailInput">
+    <button onclick="submitEmail()">Submit</button>
+  </div>
+</main>
+
+<footer>
+  <div><a href="mailto:admin@lovemeloveus.org">admin@lovemeloveus.org</a></div>
+  <div>+1 (425) 298-7866</div>
+  <div>@lovemeloveus</div>
+</footer>
+
+<!-- Zelle Donation Modal -->
+<div id="zelleModal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeZelleModal()">&times;</span>
+      <h3>Send Your Donation via Zelle</h3>
+      <p id="zelleAmountText"></p>
+      <p><strong>Send to:</strong><br><code>donation.lovemeloveus@gmail.com</code></p>
+      <p>Please use your banking app or Zelle to send the donation.</p>
+    </div>
+  </div>
+  
+<script src="Nav.js"></script>
+<script>
+    function toggleMobileMenu() {
+    document.getElementById("mobileMenu").classList.toggle("show");
+  }
+
+function openZelleModal(amount) {
+    document.getElementById('zelleModal').style.display = 'block';
+    document.getElementById('zelleAmountText').innerText = `You selected a $${amount} donation.`;
+  }
+  
+  function closeZelleModal() {
+    document.getElementById('zelleModal').style.display = 'none';
+  }
+</script>
+</body>
+</html>

@@ -1,0 +1,922 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Love Me. Love Us.</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="News.css">
+</head>
+
+<body>
+  <!-- Top banner and nav -->
+  <header>
+    <div class="hero-banner">
+        <img src="Images/news.avif" alt="About Banner" class="hero-bg">
+    </div>
+
+    <nav class="nav-bar">
+      <div class="hamburger" onclick="toggleMobileMenu()">☰</div>
+      <div class="nav-group left-nav">
+        <a href="Resources.html">Resources</a>
+        <a href="News.html">News</a>
+        <a href="Volunteer.html">Volunteer</a>
+      </div>
+      <div class="nav-group logo-nav">
+        <a href="Home.html" class="logo-link">
+          <div class="logo-bg">
+            <img src="Images/Logo.avif" alt="Logo" class="logo">
+          </div>
+        </a>
+      </div>
+      <div class="nav-group right-nav">
+        <a href="Events.html">Events</a>
+        <a href="Donate.html">Donate</a>
+        <a href="About.html" class="active">About</a>
+      </div>
+    </nav>
+
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="Resources.html">Resources</a>
+      <a href="News.html">News</a>
+      <a href="Volunteer.html">Volunteer</a>
+      <a href="Events.html">Events</a>
+      <a href="Donate.html">Donate</a>
+      <a href="About.html">About</a>
+    </div>
+  </header>
+
+  <!-- Title over banner -->
+  <div class="news-hero-text">
+    <h1>RECENT<br><span class="news-sub">UPDATES</span></h1>
+  </div>
+
+  <!-- News Cards -->
+  <section class="news-cards">
+
+    <!---Card 1-->
+    <div class="news-card" onclick="openModal('modal2')">
+      <img class="news-image" src="Images/care.avif" alt="Ink & Inclusion Event" />
+      <div class="news-content">
+        <p><strong>"Ink and Inclusion" Care Cross Culture Event</strong><br>
+        <em>August 3rd, 2024</em></p>
+      </div>
+    </div>
+
+    <!-- Modal for Card 1 -->
+    <div id="modal2" class="modal">
+        <div class="modal-content">
+        <span class="close" onclick="closeModal('modal2')">&times;</span>
+        <h2>"Ink and Inclusion" Care Cross Culture Event</h2>
+        <p><em>August 3rd, 2024</em></p>
+        <hr>
+        <p>
+            This event celebrated diversity through storytelling, illustration, and hands-on zine-making workshops. 
+            Kids shared their voices in visual form while learning about different cultures and abilities.
+        </p>
+    
+        <!-- Collage Gallery -->
+        <div class="image-gallery">
+            <img src="Images/care1.avif" alt="Event photo 1" onclick="openImageModal(0, 'care')">
+            <img src="Images/care2.avif" alt="Event photo 2" onclick="openImageModal(1, 'care')">
+            <img src="Images/care3.avif" alt="Event photo 3" onclick="openImageModal(2, 'care')">
+            <img src="Images/care4.avif" alt="Event photo 4" onclick="openImageModal(3, 'care')">
+            <img src="Images/care5.avif" alt="Event photo 5" onclick="openImageModal(4, 'care')">
+            <img src="Images/care6.avif" alt="Event photo 6" onclick="openImageModal(5, 'care')">
+            <img src="Images/care7.avif" alt="Event photo 7" onclick="openImageModal(6, 'care')">
+            <img src="Images/care8.avif" alt="Event photo 8" onclick="openImageModal(7, 'care')">
+            <img src="Images/care9.avif" alt="Event photo 9" onclick="openImageModal(8, 'care')">
+            <img src="Images/care10.avif" alt="Event photo 10" onclick="openImageModal(9, 'care')">
+            <img src="Images/care11.avif" alt="Event photo 11" onclick="openImageModal(10, 'care')">
+            <img src="Images/care12.avif" alt="Event photo 12" onclick="openImageModal(11, 'care')">
+            <img src="Images/care13.avif" alt="Event photo 13" onclick="openImageModal(12, 'care')">
+            <img src="Images/care14.avif" alt="Event photo 14" onclick="openImageModal(13, 'care')">
+            <img src="Images/care15.avif" alt="Event photo 15" onclick="openImageModal(14, 'care')">
+            <img src="Images/care16.avif" alt="Event photo 16" onclick="openImageModal(15, 'care')">
+            <img src="Images/care17.avif" alt="Event photo 17" onclick="openImageModal(16, 'care')">
+            <img src="Images/care18.avif" alt="Event photo 18" onclick="openImageModal(17, 'care')">
+            <img src="Images/care19.avif" alt="Event photo 19" onclick="openImageModal(18, 'care')">
+            <img src="Images/care20.avif" alt="Event photo 20" onclick="openImageModal(19, 'care')">
+            <img src="Images/care21.avif" alt="Event photo 21" onclick="openImageModal(20, 'care')">
+            <img src="Images/care22.avif" alt="Event photo 22" onclick="openImageModal(21, 'care')">
+            <img src="Images/care23.avif" alt="Event photo 23" onclick="openImageModal(22, 'care')">
+            <img src="Images/care24.avif" alt="Event photo 24" onclick="openImageModal(23, 'care')">
+        </div>
+        </div>
+    </div>
+
+    <!---Card 2-->
+    <div class="news-card" onclick="openModal('modal1')">
+        <img class="news-image" src="Images/article.webp" alt="Seattle's Child Magazine Feature" />
+        <div class="news-content with-button">
+          <div class="text">
+            <p><strong>Featured in Seattle’s Child Magazine</strong><br>
+            <em>July 2024</em></p>
+          </div>
+          <div class="button">
+            <a href="https://www.seattleschild.com/the-summer-care-for-disabilities-crunch/" 
+                target="_blank" 
+                class="article-link" 
+                onclick="event.stopPropagation()">Read Article</a>
+          </div>
+        </div>
+      </div>           
+
+    <!-- Modal for Card 2 -->
+    <div id="modal1" class="modal">
+        <div class="modal-content">
+        <span class="close" onclick="closeModal('modal1')">&times;</span>
+        <h2>Featured in Seattle’s Child Magazine</h2>
+        <p><em>July 31st, 2024</em></p>
+        <hr>
+        <p>We are honored to be featured in <em>Seattle’s Child Magazine</em> for our inclusive summer programs that support children with disabilities and their families. As the article highlights, many parents face enormous hurdles finding accessible and affordable care — especially during the summer months.</p>
+        <p>At <strong>Love Me. Love Us.</strong>, we aim to ease that burden. Through free camps, one-on-one volunteer support, and a welcoming community space for parents, we provide more than childcare — we offer connection, creativity, and a sense of belonging.</p>
+        <blockquote>“Our idea is having a community to contribute to those with special needs is the realization of social justice.”<br><strong>– Jingde Hsia, Founder</strong></blockquote>
+        <p><a href="https://www.seattleschild.com/the-summer-care-for-disabilities-crunch/" target="_blank" class="article-link">👉 Read the Full Article</a></p>
+     </div>
+    </div>
+
+    <!---Card 3-->
+    <div class="news-card" onclick="openModal('modal3')">
+        <img class="news-image" src="Images/sc1.avif" alt="Summer Camp July '24" />
+        <div class="news-content">
+        <p><strong>3-Day Summer Art & Music Camp</strong><br>
+        <em>July 24th, 2024</em></p>
+        </div>
+    </div>
+
+    <!-- Modal for Card 3 -->
+    <div id="modal3" class="modal">
+        <div class="modal-content">
+        <span class="close" onclick="closeModal('modal3')">&times;</span>
+        <h2>3-Day Summer Art & Music Camp</h2>
+        <p><em>July 24th, 2024</em></p>
+        <hr>
+        <p>
+            The 3-Day Summer Art & Music Camp offered children of all abilities a creative space to explore painting, music, and movement through inclusive, hands-on activities. It fostered self-expression, friendship, and joy in a welcoming community environment.
+        </p>
+    
+        <!-- Collage Gallery -->
+        <div class="image-gallery">
+            <img src="Images/sc1.avif" alt="Event photo 1" onclick="openImageModal(0, 'sc')">
+            <img src="Images/sc2.avif" alt="Event photo 2" onclick="openImageModal(1, 'sc')">
+            <img src="Images/sc3.avif" alt="Event photo 3" onclick="openImageModal(2, 'sc')">
+            <img src="Images/sc4.avif" alt="Event photo 4" onclick="openImageModal(3, 'sc')">
+            <img src="Images/sc5.avif" alt="Event photo 5" onclick="openImageModal(4, 'sc')">
+            <img src="Images/sc6.avif" alt="Event photo 6" onclick="openImageModal(5, 'sc')">
+            <img src="Images/sc7.avif" alt="Event photo 7" onclick="openImageModal(6, 'sc')">
+            <img src="Images/sc8.avif" alt="Event photo 8" onclick="openImageModal(7, 'sc')">
+            <img src="Images/sc9.avif" alt="Event photo 9" onclick="openImageModal(8, 'sc')">
+            <img src="Images/sc10.avif" alt="Event photo 10" onclick="openImageModal(9, 'sc')">
+            <img src="Images/sc11.avif" alt="Event photo 11" onclick="openImageModal(10, 'sc')">
+            <img src="Images/sc12.avif" alt="Event photo 12" onclick="openImageModal(11, 'sc')">
+            <img src="Images/sc13.avif" alt="Event photo 13" onclick="openImageModal(12, 'sc')">
+            <img src="Images/sc14.avif" alt="Event photo 14" onclick="openImageModal(13, 'sc')">
+            <img src="Images/sc15.avif" alt="Event photo 15" onclick="openImageModal(14, 'sc')">
+            <img src="Images/sc16.avif" alt="Event photo 16" onclick="openImageModal(15, 'sc')">
+            <img src="Images/sc17.avif" alt="Event photo 17" onclick="openImageModal(16, 'sc')">
+            <img src="Images/sc19.avif" alt="Event photo 18" onclick="openImageModal(17, 'sc')">
+            <img src="Images/sc20.avif" alt="Event photo 19" onclick="openImageModal(18, 'sc')">
+            <img src="Images/sc21.avif" alt="Event photo 20" onclick="openImageModal(19, 'sc')">
+            <img src="Images/sc22.avif" alt="Event photo 21" onclick="openImageModal(20, 'sc')">
+            <img src="Images/sc23.png" alt="Event photo 22" onclick="openImageModal(21, 'sc')">
+            <img src="Images/sc24.avif" alt="Event photo 23" onclick="openImageModal(22, 'sc')">
+            <img src="Images/sc25.avif" alt="Event photo 24" onclick="openImageModal(23, 'sc')">
+            <img src="Images/sc26.avif" alt="Event photo 25" onclick="openImageModal(24, 'sc')">
+            <img src="Images/sc27.avif" alt="Event photo 26" onclick="openImageModal(25, 'sc')">
+            <img src="Images/sc28.avif" alt="Event photo 27" onclick="openImageModal(26, 'sc')">
+            <img src="Images/sc29.avif" alt="Event photo 28" onclick="openImageModal(27, 'sc')">
+            <img src="Images/sc30.avif" alt="Event photo 29" onclick="openImageModal(28, 'sc')">
+            <img src="Images/sc31.avif" alt="Event photo 30" onclick="openImageModal(29, 'sc')">
+            <img src="Images/sc32.avif" alt="Event photo 31" onclick="openImageModal(30, 'sc')">
+            <img src="Images/sc33.avif" alt="Event photo 32" onclick="openImageModal(31, 'sc')">
+            <img src="Images/sc34.avif" alt="Event photo 33" onclick="openImageModal(32, 'sc')">
+            <img src="Images/sc35.avif" alt="Event photo 34" onclick="openImageModal(33, 'sc')">
+            <img src="Images/sc36.avif" alt="Event photo 35" onclick="openImageModal(34, 'sc')">
+            <img src="Images/sc37.avif" alt="Event photo 36" onclick="openImageModal(35, 'sc')">
+            <img src="Images/sc38.avif" alt="Event photo 37" onclick="openImageModal(36, 'sc')">
+            <img src="Images/sc39.avif" alt="Event photo 38" onclick="openImageModal(37, 'sc')">
+            <img src="Images/sc40.avif" alt="Event photo 39" onclick="openImageModal(38, 'sc')">
+          </div>          
+        </div>
+    </div>
+
+    <!---Card 4-->
+    <div class="news-card" onclick="openModal('modal4')">
+        <img class="news-image" src="Images/june1.avif" alt="Summer Camp June '24" />
+        <div class="news-content">
+        <p><strong>June 2024 Art & Music Camp + Senior Sendoff</strong><br>
+        <em>June 8th, 2024</em></p>
+        </div>
+    </div>
+
+    <!-- Modal for Card 4 -->
+    <div id="modal4" class="modal">
+        <div class="modal-content">
+        <span class="close" onclick="closeModal('modal4')">&times;</span>
+        <h2>June 2024 Art & Music Camp + Senior Sendoff</h2>
+        <p><em>June 8th, 2024</em></p>
+        <hr>
+        <p>The June 2024 Art & Music Camp celebrated creativity through inclusive painting, music, and movement activities for children of all abilities. The event also featured a heartfelt Senior Sendoff honoring graduating volunteers and participants for their dedication and impact.
+        </p>
+
+    <!-- Collage Gallery -->
+    <div class="image-gallery">
+        <img src="Images/june1.avif" alt="Event photo 1" onclick="openImageModal(0, 'june')">
+        <img src="Images/june2.avif" alt="Event photo 2" onclick="openImageModal(1, 'june')">
+        <img src="Images/june3.avif" alt="Event photo 3" onclick="openImageModal(2, 'june')">
+        <img src="Images/june4.avif" alt="Event photo 4" onclick="openImageModal(3, 'june')">
+        <img src="Images/june5.avif" alt="Event photo 5" onclick="openImageModal(4, 'june')">
+        <img src="Images/june6.avif" alt="Event photo 6" onclick="openImageModal(5, 'june')">
+        <img src="Images/june7.avif" alt="Event photo 7" onclick="openImageModal(6, 'june')">
+        <img src="Images/june8.avif" alt="Event photo 8" onclick="openImageModal(7, 'june')">
+        <img src="Images/june9.avif" alt="Event photo 9" onclick="openImageModal(8, 'june')">
+        <img src="Images/june10.avif" alt="Event photo 10" onclick="openImageModal(9, 'june')">
+        <img src="Images/june11.avif" alt="Event photo 11" onclick="openImageModal(10, 'june')">
+        <img src="Images/june12.avif" alt="Event photo 12" onclick="openImageModal(11, 'june')">
+        <img src="Images/june13.avif" alt="Event photo 13" onclick="openImageModal(12, 'june')">
+        <img src="Images/june14.avif" alt="Event photo 14" onclick="openImageModal(13, 'june')">
+        <img src="Images/june15.avif" alt="Event photo 15" onclick="openImageModal(14, 'june')">
+        <img src="Images/june16.avif" alt="Event photo 16" onclick="openImageModal(15, 'june')">
+        <img src="Images/june17.avif" alt="Event photo 17" onclick="openImageModal(16, 'june')">
+        <img src="Images/june18.avif" alt="Event photo 18" onclick="openImageModal(17, 'june')">
+        <img src="Images/june19.avif" alt="Event photo 19" onclick="openImageModal(18, 'june')">
+        <img src="Images/june20.avif" alt="Event photo 20" onclick="openImageModal(19, 'june')">
+        <img src="Images/june21.avif" alt="Event photo 21" onclick="openImageModal(20, 'june')">
+        <img src="Images/june22.avif" alt="Event photo 22" onclick="openImageModal(21, 'june')">
+        <img src="Images/june23.avif" alt="Event photo 23" onclick="openImageModal(22, 'june')">
+        <img src="Images/june24.avif" alt="Event photo 24" onclick="openImageModal(23, 'june')">
+        </div>          
+    </div>
+</div>
+
+     <!---Card 5-->
+     <div class="news-card" onclick="openModal('modal5')">
+        <img class="news-image" src="Images/apr1.avif" alt="Camp April '24" />
+        <div class="news-content">
+        <p><strong>April 2024 Parents Workshop + Spring Into Fun Camp</strong><br>
+        <em>May 9th, 2024</em></p>
+        </div>
+    </div>
+
+    <!-- Modal for Card 5 -->
+    <div id="modal5" class="modal">
+        <div class="modal-content">
+        <span class="close" onclick="closeModal('modal5')">&times;</span>
+        <h2>April 2024 Parents Workshop + Spring Into Fun Camp</h2>
+        <p><em>May 9th, 2024</em></p>
+        <hr>
+        <p>In April 2024, we hosted a two-part event featuring a supportive Parents Workshop and the “Spring Into Fun” Camp for children. While parents connected and learned valuable resources during the workshop, kids enjoyed inclusive arts, crafts, and games designed to spark creativity and joy.
+        </p>
+
+    <!-- Collage Gallery -->
+    <div class="image-gallery">
+        <img src="Images/apr1.avif" alt="Event photo 1" onclick="openImageModal(0, 'apr')">
+        <img src="Images/apr2.avif" alt="Event photo 2" onclick="openImageModal(1, 'apr')">
+        <img src="Images/apr3.avif" alt="Event photo 3" onclick="openImageModal(2, 'apr')">
+        <img src="Images/apr4.avif" alt="Event photo 4" onclick="openImageModal(3, 'apr')">
+        <img src="Images/apr5.avif" alt="Event photo 5" onclick="openImageModal(4, 'apr')">
+        <img src="Images/apr6.avif" alt="Event photo 6" onclick="openImageModal(5, 'apr')">
+        <img src="Images/apr7.avif" alt="Event photo 7" onclick="openImageModal(6, 'apr')">
+        <img src="Images/apr8.avif" alt="Event photo 8" onclick="openImageModal(7, 'apr')">
+        <img src="Images/apr9.avif" alt="Event photo 9" onclick="openImageModal(8, 'apr')">
+        <img src="Images/apr10.avif" alt="Event photo 10" onclick="openImageModal(9, 'apr')">
+        <img src="Images/apr11.avif" alt="Event photo 11" onclick="openImageModal(10, 'apr')">
+        <img src="Images/apr12.avif" alt="Event photo 12" onclick="openImageModal(11, 'apr')">
+        <img src="Images/apr13.avif" alt="Event photo 13" onclick="openImageModal(12, 'apr')">
+        <img src="Images/apr14.avif" alt="Event photo 14" onclick="openImageModal(13, 'apr')">
+        <img src="Images/apr15.avif" alt="Event photo 15" onclick="openImageModal(14, 'apr')">
+        <img src="Images/apr16.avif" alt="Event photo 16" onclick="openImageModal(15, 'apr')">
+        <img src="Images/apr17.avif" alt="Event photo 17" onclick="openImageModal(16, 'apr')">
+        <img src="Images/apr18.avif" alt="Event photo 18" onclick="openImageModal(17, 'apr')">
+        <img src="Images/apr19.avif" alt="Event photo 19" onclick="openImageModal(18, 'apr')">
+        </div>          
+    </div>
+</div>
+
+    <!---Card 6-->
+    <div class="news-card" onclick="openModal('modal6')">
+        <img class="news-image" src="Images/mar1.avif" alt="Camp March '24" />
+        <div class="news-content">
+        <p><strong>March 2024 Love Me Love Sports Basketball Camp</strong><br>
+        <em>May 9th, 2024</em></p>
+        </div>
+    </div>
+
+    <!-- Modal for Card 6 -->
+    <div id="modal6" class="modal">
+        <div class="modal-content">
+        <span class="close" onclick="closeModal('modal6')">&times;</span>
+        <h2>March 2024 Love Me Love Sports Basketball Camp</h2>
+        <p><em>May 9th, 2024</em></p>
+        <hr>
+
+    <!-- Collage Gallery -->
+    <div class="image-gallery">
+        <img src="Images/mar1.avif" alt="Event photo 1" onclick="openImageModal(0, 'mar')">
+        <img src="Images/mar2.avif" alt="Event photo 2" onclick="openImageModal(1, 'mar')">
+        <img src="Images/mar3.avif" alt="Event photo 3" onclick="openImageModal(2, 'mar')">
+        <img src="Images/mar4.avif" alt="Event photo 4" onclick="openImageModal(3, 'mar')">
+        <img src="Images/mar5.avif" alt="Event photo 5" onclick="openImageModal(4, 'mar')">
+        <img src="Images/mar6.avif" alt="Event photo 6" onclick="openImageModal(5, 'mar')">
+        <img src="Images/mar7.avif" alt="Event photo 7" onclick="openImageModal(6, 'mar')">
+        <img src="Images/mar8.avif" alt="Event photo 8" onclick="openImageModal(7, 'mar')">
+        <img src="Images/mar9.avif" alt="Event photo 9" onclick="openImageModal(8, 'mar')">
+        <img src="Images/mar10.avif" alt="Event photo 10" onclick="openImageModal(9, 'mar')">
+        <img src="Images/mar11.avif" alt="Event photo 11" onclick="openImageModal(10, 'mar')">
+        <img src="Images/mar12.avif" alt="Event photo 12" onclick="openImageModal(11, 'mar')">
+        </div>          
+    </div>
+</div>
+
+     <!---Card 7-->
+     <div class="news-card" onclick="openModal('modal7')">
+        <img class="news-image" src="Images/ny1.avif" alt="Camp January '24" />
+        <div class="news-content">
+        <p><strong>February 2024 New Year's Workshop</strong><br>
+        <em>May 9th, 2024</em></p>
+        </div>
+    </div>
+
+    <!-- Modal for Card 7 -->
+    <div id="modal7" class="modal">
+        <div class="modal-content">
+        <span class="close" onclick="closeModal('modal7')">&times;</span>
+        <h2>February 2024 New Year's Workshop</h2>
+        <p><em>May 9th, 2024</em></p>
+        <hr>
+
+    <!-- Collage Gallery -->
+    <div class="image-gallery">
+        <img src="Images/ny1.avif" alt="Event photo 1" onclick="openImageModal(0, 'ny')">
+        <img src="Images/ny2.avif" alt="Event photo 2" onclick="openImageModal(1, 'ny')">
+        <img src="Images/ny3.avif" alt="Event photo 3" onclick="openImageModal(2, 'ny')">
+        <img src="Images/ny4.avif" alt="Event photo 4" onclick="openImageModal(3, 'ny')">
+        <img src="Images/ny5.avif" alt="Event photo 5" onclick="openImageModal(4, 'ny')">
+        <img src="Images/ny6.avif" alt="Event photo 6" onclick="openImageModal(5, 'ny')">
+        <img src="Images/ny7.avif" alt="Event photo 7" onclick="openImageModal(6, 'ny')">
+        <img src="Images/ny8.avif" alt="Event photo 8" onclick="openImageModal(7, 'ny')">
+        <img src="Images/ny9.avif" alt="Event photo 9" onclick="openImageModal(8, 'ny')">
+        <img src="Images/ny10.avif" alt="Event photo 10" onclick="openImageModal(9, 'ny')">
+        </div>          
+    </div>
+</div>
+
+    <!---Card 8-->
+    <div class="news-card" onclick="openModal('modal8')">
+        <img class="news-image" src="Images/dec1.avif" alt="Camp December '23" />
+        <div class="news-content">
+        <p><strong>December 2023 Gingerbread House Workshop</strong><br>
+        <em>December 23rd, 2023</em></p>
+        </div>
+    </div>
+
+    <!-- Modal for Card 8 -->
+    <div id="modal8" class="modal">
+        <div class="modal-content">
+        <span class="close" onclick="closeModal('modal8')">&times;</span>
+        <h2>December 2023 Gingerbread House Workshop</h2>
+        <p><em>December 23rd, 2023</em></p>
+        <hr>
+
+    <!-- Collage Gallery -->
+    <div class="image-gallery">
+        <img src="Images/dec1.avif" alt="Event photo 1" onclick="openImageModal(0, 'dec')">
+        <img src="Images/dec2.avif" alt="Event photo 2" onclick="openImageModal(1, 'dec')">
+        <img src="Images/dec3.avif" alt="Event photo 3" onclick="openImageModal(2, 'dec')">
+        <img src="Images/dec4.avif" alt="Event photo 4" onclick="openImageModal(3, 'dec')">
+        <img src="Images/dec5.avif" alt="Event photo 5" onclick="openImageModal(4, 'dec')">
+        <img src="Images/dec6.avif" alt="Event photo 6" onclick="openImageModal(5, 'dec')">
+        <img src="Images/dec7.avif" alt="Event photo 7" onclick="openImageModal(6, 'dec')">
+        <img src="Images/dec8.avif" alt="Event photo 8" onclick="openImageModal(7, 'dec')">
+        <img src="Images/dec9.avif" alt="Event photo 9" onclick="openImageModal(8, 'dec')">
+        <img src="Images/dec10.avif" alt="Event photo 10" onclick="openImageModal(9, 'dec')">
+        <img src="Images/dec11.avif" alt="Event photo 11" onclick="openImageModal(10, 'dec')">
+        <img src="Images/dec12.avif" alt="Event photo 12" onclick="openImageModal(11, 'dec')">
+        <img src="Images/dec13.avif" alt="Event photo 13" onclick="openImageModal(12, 'dec')">
+        <img src="Images/dec14.avif" alt="Event photo 14" onclick="openImageModal(13, 'dec')">
+        <img src="Images/dec15.avif" alt="Event photo 15" onclick="openImageModal(14, 'dec')">
+        <img src="Images/dec16.avif" alt="Event photo 16" onclick="openImageModal(15, 'dec')">
+        </div>          
+    </div>
+</div>
+
+    <!---Card 9-->
+    <div class="news-card" onclick="openModal('modal9')">
+        <img class="news-image" src="Images/mus1.avif" alt="Concert December '23" />
+        <div class="news-content">
+        <p><strong>December 2023 Music Fundraising Concert</strong><br>
+        <em>December 22nd, 2023</em></p>
+        </div>
+    </div>
+
+    <!-- Modal for Card 9 -->
+    <div id="modal9" class="modal">
+        <div class="modal-content">
+        <span class="close" onclick="closeModal('modal9')">&times;</span>
+        <h2>December 2023 Music Fundraising Concert</h2>
+        <p><em>December 22nd, 2023</em></p>
+        <hr>
+
+    <!-- Collage Gallery -->
+    <div class="image-gallery">
+        <img src="Images/mus1.avif" alt="Event photo 1" onclick="openImageModal(0, 'mus')">
+        <img src="Images/mus2.avif" alt="Event photo 2" onclick="openImageModal(1, 'mus')">
+        <img src="Images/mus3.avif" alt="Event photo 3" onclick="openImageModal(2, 'mus')">
+        <img src="Images/mus4.avif" alt="Event photo 4" onclick="openImageModal(3, 'mus')">
+        <img src="Images/mus5.avif" alt="Event photo 5" onclick="openImageModal(4, 'mus')">
+        <img src="Images/mus6.avif" alt="Event photo 6" onclick="openImageModal(5, 'mus')">
+        <img src="Images/mus7.avif" alt="Event photo 7" onclick="openImageModal(6, 'mus')">
+        <img src="Images/mus8.avif" alt="Event photo 8" onclick="openImageModal(7, 'mus')">
+        </div>          
+    </div>
+</div>
+
+    <!---Card 10-->
+    <div class="news-card" onclick="openModal('modal10')">
+        <img class="news-image" src="Images/nov1.avif" alt="Camp November '23" />
+        <div class="news-content">
+        <p><strong>November 2023 Parents Workshop + Sports & Art Camp</strong><br>
+        <em>November 15th, 2023</em></p>
+        </div>
+    </div>
+
+    <!-- Modal for Card 10 -->
+    <div id="modal10" class="modal">
+        <div class="modal-content">
+        <span class="close" onclick="closeModal('modal10')">&times;</span>
+        <h2>November 2023 Parents Workshop + Sports & Art Camp</h2>
+        <p><em>November 11th, 2023</em></p>
+        <hr>
+
+    <!-- Collage Gallery -->
+    <div class="image-gallery">
+        <img src="Images/nov1.avif" alt="Event photo 1" onclick="openImageModal(0, 'nov')">
+        <img src="Images/nov2.avif" alt="Event photo 2" onclick="openImageModal(1, 'nov')">
+        <img src="Images/nov3.avif" alt="Event photo 3" onclick="openImageModal(2, 'nov')">
+        <img src="Images/nov4.avif" alt="Event photo 4" onclick="openImageModal(3, 'nov')">
+        <img src="Images/nov5.avif" alt="Event photo 5" onclick="openImageModal(4, 'nov')">
+        <img src="Images/nov6.avif" alt="Event photo 6" onclick="openImageModal(5, 'nov')">
+        <img src="Images/nov7.avif" alt="Event photo 7" onclick="openImageModal(6, 'nov')">
+        <img src="Images/nov8.avif" alt="Event photo 8" onclick="openImageModal(7, 'nov')">
+        <img src="Images/nov9.avif" alt="Event photo 9" onclick="openImageModal(8, 'nov')">
+        <img src="Images/nov10.avif" alt="Event photo 10" onclick="openImageModal(9, 'nov')">
+        </div>          
+    </div>
+</div>
+
+    <!---Card 11-->
+    <div class="news-card" onclick="openModal('modal11')">
+        <img class="news-image" src="Images/oct1.avif" alt="Camp October '23" />
+        <div class="news-content">
+        <p><strong>October 2023 Love Me Love Art + Love Me Love Music Camp</strong><br>
+        <em>October 22nd, 2023</em></p>
+        </div>
+    </div>
+
+    <!-- Modal for Card 11 -->
+    <div id="modal11" class="modal">
+        <div class="modal-content">
+        <span class="close" onclick="closeModal('modal11')">&times;</span>
+        <h2>October 2023 Love Me Love Art + Love Me Love Music Camp</h2>
+        <p><em>October 22nd, 2023</em></p>
+        <hr>
+
+    <!-- Collage Gallery -->
+    <div class="image-gallery">
+        <img src="Images/oct1.avif" alt="Event photo 1" onclick="openImageModal(0, 'oct')">
+        <img src="Images/oct2.avif" alt="Event photo 2" onclick="openImageModal(1, 'oct')">
+        <img src="Images/oct3.avif" alt="Event photo 3" onclick="openImageModal(2, 'oct')">
+        <img src="Images/oct4.avif" alt="Event photo 4" onclick="openImageModal(3, 'oct')">
+        <img src="Images/oct5.avif" alt="Event photo 5" onclick="openImageModal(4, 'oct')">
+        <img src="Images/oct6.avif" alt="Event photo 6" onclick="openImageModal(5, 'oct')">
+        </div>          
+    </div>
+</div>
+
+    <!---Card 12-->
+    <div class="news-card" onclick="openModal('modal12')">
+        <img class="news-image" src="Images/sum1.avif" alt="Camp Summer '23" />
+        <div class="news-content">
+        <p><strong>Summer Camp 2023 - Sessions 1 & 2</strong><br>
+        <em>October 22nd, 2023</em></p>
+        </div>
+    </div>
+
+    <!-- Modal for Card 12 -->
+    <div id="modal12" class="modal">
+        <div class="modal-content">
+        <span class="close" onclick="closeModal('modal12')">&times;</span>
+        <h2>Summer Camp 2023 - Sessions 1 & 2</h2>
+        <p><em>October 22nd, 2023</em></p>
+        <hr>
+
+    <!-- Collage Gallery -->
+    <div class="image-gallery">
+        <img src="Images/sum1.avif" alt="Event photo 1" onclick="openImageModal(0, 'sum')">
+        <img src="Images/sum2.avif" alt="Event photo 2" onclick="openImageModal(1, 'sum')">
+        <img src="Images/sum3.avif" alt="Event photo 3" onclick="openImageModal(2, 'sum')">
+        <img src="Images/sum4.avif" alt="Event photo 4" onclick="openImageModal(3, 'sum')">
+        <img src="Images/sum5.avif" alt="Event photo 5" onclick="openImageModal(4, 'sum')">
+        <img src="Images/sum6.avif" alt="Event photo 6" onclick="openImageModal(5, 'sum')">
+        <img src="Images/sum7.avif" alt="Event photo 7" onclick="openImageModal(6, 'sum')">
+        </div>          
+    </div>
+</div>
+
+    <!---Card 14-->
+    <div class="news-card" onclick="openModal('modal14')">
+        <img class="news-image" src="Images/may1.avif" alt="Camp May '23" />
+        <div class="news-content">
+        <p><strong>May 2022 Love Me Love Sports + Love Me Love Art Camp</strong><br>
+        <em>May 28th, 2022</em></p>
+        </div>
+    </div>
+
+    <!-- Modal for Card 14 -->
+    <div id="modal14" class="modal">
+        <div class="modal-content">
+        <span class="close" onclick="closeModal('modal14')">&times;</span>
+        <h2>May 2022 Love Me Love Sports + Love Me Love Art Camp</h2>
+        <p><em>May 28th, 2022</em></p>
+        <hr>
+
+    <!-- Collage Gallery -->
+    <div class="image-gallery">
+        <img src="Images/may1.avif" alt="Event photo 1" onclick="openImageModal(0, 'may')">
+        <img src="Images/may2.avif" alt="Event photo 2" onclick="openImageModal(1, 'may')">
+        <img src="Images/may3.avif" alt="Event photo 3" onclick="openImageModal(2, 'may')">
+        <img src="Images/may4.avif" alt="Event photo 4" onclick="openImageModal(3, 'may')">
+        <img src="Images/may5.avif" alt="Event photo 5" onclick="openImageModal(4, 'may')">
+        <img src="Images/may6.avif" alt="Event photo 6" onclick="openImageModal(5, 'may')">
+        <img src="Images/may7.avif" alt="Event photo 7" onclick="openImageModal(6, 'may')">
+        <img src="Images/may8.avif" alt="Event photo 8" onclick="openImageModal(7, 'may')">
+        <img src="Images/may9.avif" alt="Event photo 9" onclick="openImageModal(8, 'may')">
+        <img src="Images/may10.avif" alt="Event photo 10" onclick="openImageModal(9, 'may')">
+        <img src="Images/may11.avif" alt="Event photo 11" onclick="openImageModal(10, 'may')">
+        <img src="Images/may12.avif" alt="Event photo 12" onclick="openImageModal(11, 'may')">
+        <img src="Images/may13.avif" alt="Event photo 13" onclick="openImageModal(12, 'may')">
+        <img src="Images/may14.avif" alt="Event photo 14" onclick="openImageModal(13, 'may')">
+        <img src="Images/may15.avif" alt="Event photo 15" onclick="openImageModal(14, 'may')">
+        <img src="Images/may16.avif" alt="Event photo 16" onclick="openImageModal(15, 'may')">
+        <img src="Images/may17.avif" alt="Event photo 17" onclick="openImageModal(16, 'may')">
+        </div>          
+    </div>
+</div>
+
+    <!---Card 15-->
+    <div class="news-card" onclick="openModal('modal15')">
+        <img class="news-image" src="Images/feb1.avif" alt="Camp Feb '23" />
+        <div class="news-content">
+        <p><strong>February 2022 Love Me Love Sports Camp</strong><br>
+        <em>March 21st, 2022</em></p>
+        </div>
+    </div>
+
+    <!-- Modal for Card 15 -->
+    <div id="modal15" class="modal">
+        <div class="modal-content">
+        <span class="close" onclick="closeModal('modal15')">&times;</span>
+        <h2>February 2022 Love Me Love Sports Camp</h2>
+        <p><em>March 21st, 2022</em></p>
+        <hr>
+
+    <!-- Collage Gallery -->
+    <div class="image-gallery">
+        <img src="Images/feb1.avif" alt="Event photo 1" onclick="openImageModal(0, 'feb')">
+        <img src="Images/feb2.avif" alt="Event photo 2" onclick="openImageModal(1, 'feb')">
+        <img src="Images/feb3.avif" alt="Event photo 3" onclick="openImageModal(2, 'feb')">
+        <img src="Images/feb4.avif" alt="Event photo 4" onclick="openImageModal(3, 'feb')">
+        <img src="Images/feb5.avif" alt="Event photo 5" onclick="openImageModal(4, 'feb')">
+        <img src="Images/feb6.avif" alt="Event photo 6" onclick="openImageModal(5, 'feb')">
+        <img src="Images/feb7.avif" alt="Event photo 7" onclick="openImageModal(6, 'feb')">
+        </div>          
+    </div>
+</div>
+
+    <!---Card 16-->
+    <div class="news-card" onclick="openModal('modal16')">
+        <img class="news-image" src="Images/aug1.avif" alt="Camp Aug '21" />
+        <div class="news-content">
+        <p><strong>August 2021 (8/21) Love Me Love Sports Camp</strong><br>
+        <em>August 21st, 2021</em></p>
+        </div>
+    </div>
+
+    <!-- Modal for Card 16 -->
+    <div id="modal16" class="modal">
+        <div class="modal-content">
+        <span class="close" onclick="closeModal('modal16')">&times;</span>
+        <h2>August 2021 (8/21) Love Me Love Sports Camp</h2>
+        <p><em>August 21st, 2021</em></p>
+        <hr>
+
+    <!-- Collage Gallery -->
+    <div class="image-gallery">
+        <img src="Images/aug1.avif" alt="Event photo 1" onclick="openImageModal(0, 'aug')">
+        <img src="Images/aug2.avif" alt="Event photo 2" onclick="openImageModal(1, 'aug')">
+        <img src="Images/aug3.avif" alt="Event photo 3" onclick="openImageModal(2, 'aug')">
+        <img src="Images/aug4.avif" alt="Event photo 4" onclick="openImageModal(3, 'aug')">
+        <img src="Images/aug5.avif" alt="Event photo 5" onclick="openImageModal(4, 'aug')">
+        <img src="Images/aug6.avif" alt="Event photo 6" onclick="openImageModal(5, 'aug')">
+        <img src="Images/aug7.avif" alt="Event photo 7" onclick="openImageModal(6, 'aug')">
+        <img src="Images/aug8.avif" alt="Event photo 8" onclick="openImageModal(7, 'aug')">
+        <img src="Images/aug9.avif" alt="Event photo 9" onclick="openImageModal(8, 'aug')">
+        <img src="Images/aug10.avif" alt="Event photo 10" onclick="openImageModal(9, 'aug')">
+        <img src="Images/aug11.avif" alt="Event photo 11" onclick="openImageModal(10, 'aug')">
+        <img src="Images/aug12.avif" alt="Event photo 12" onclick="openImageModal(11, 'aug')">
+        <img src="Images/aug13.avif" alt="Event photo 13" onclick="openImageModal(12, 'aug')">
+        <img src="Images/aug14.avif" alt="Event photo 14" onclick="openImageModal(13, 'aug')">
+        <img src="Images/aug15.avif" alt="Event photo 15" onclick="openImageModal(14, 'aug')">
+        <img src="Images/aug16.avif" alt="Event photo 16" onclick="openImageModal(15, 'aug')">
+        <img src="Images/aug17.avif" alt="Event photo 17" onclick="openImageModal(16, 'aug')">
+        <img src="Images/aug18.avif" alt="Event photo 18" onclick="openImageModal(17, 'aug')">
+        <img src="Images/aug19.avif" alt="Event photo 19" onclick="openImageModal(18, 'aug')">
+        </div>          
+    </div>
+</div>
+
+    <!---Card 17-->
+    <div class="news-card" onclick="openModal('modal17')">
+        <img class="news-image" src="Images/aug141.avif" alt="Camp Aug '21" />
+        <div class="news-content">
+        <p><strong>August 2021 (8/14) Love Me Love Sports Camp</strong><br>
+        <em>August 14th, 2021</em></p>
+        </div>
+    </div>
+
+    <!-- Modal for Card 17 -->
+    <div id="modal17" class="modal">
+        <div class="modal-content">
+        <span class="close" onclick="closeModal('modal17')">&times;</span>
+        <h2>August 2021 (8/14) Love Me Love Sports Camp</h2>
+        <p><em>August 14th, 2021</em></p>
+        <hr>
+
+    <!-- Collage Gallery -->
+    <div class="image-gallery">
+        <img src="Images/aug141.avif" alt="Event photo 1" onclick="openImageModal(0, 'aug14')">
+        <img src="Images/aug142.avif" alt="Event photo 2" onclick="openImageModal(1, 'aug14')">
+        <img src="Images/aug143.avif" alt="Event photo 3" onclick="openImageModal(2, 'aug14')">
+        <img src="Images/aug144.avif" alt="Event photo 4" onclick="openImageModal(3, 'aug14')">
+        <img src="Images/aug145.avif" alt="Event photo 5" onclick="openImageModal(4, 'aug14')">
+        <img src="Images/aug146.avif" alt="Event photo 6" onclick="openImageModal(5, 'aug14')">
+        <img src="Images/aug147.avif" alt="Event photo 7" onclick="openImageModal(6, 'aug14')">
+        <img src="Images/aug148.avif" alt="Event photo 8" onclick="openImageModal(7, 'aug14')">
+        <img src="Images/aug149.avif" alt="Event photo 9" onclick="openImageModal(8, 'aug14')">
+        <img src="Images/aug1410.avif" alt="Event photo 10" onclick="openImageModal(9, 'aug14')">
+        <img src="Images/aug1411.avif" alt="Event photo 11" onclick="openImageModal(10, 'aug14')">
+        <img src="Images/aug1412.avif" alt="Event photo 12" onclick="openImageModal(11, 'aug14')">
+        <img src="Images/aug1413.avif" alt="Event photo 13" onclick="openImageModal(12, 'aug14')">
+        <img src="Images/aug1414.avif" alt="Event photo 14" onclick="openImageModal(13, 'aug14')">
+        <img src="Images/aug1415.avif" alt="Event photo 15" onclick="openImageModal(14, 'aug14')">
+        <img src="Images/aug1416.avif" alt="Event photo 16" onclick="openImageModal(15, 'aug14')">
+        <img src="Images/aug1417.avif" alt="Event photo 17" onclick="openImageModal(16, 'aug14')">
+        <img src="Images/aug1418.avif" alt="Event photo 18" onclick="openImageModal(17, 'aug14')">
+        <img src="Images/aug1419.avif" alt="Event photo 19" onclick="openImageModal(18, 'aug14')">
+        <img src="Images/aug1420.avif" alt="Event photo 20" onclick="openImageModal(19, 'aug14')">
+        <img src="Images/aug1421.avif" alt="Event photo 21" onclick="openImageModal(20, 'aug14')">
+        <img src="Images/aug1422.avif" alt="Event photo 22" onclick="openImageModal(21, 'aug14')">
+        </div>          
+    </div>
+</div>
+
+    <!---Card 18-->
+    <div class="news-card" onclick="openModal('modal18')">
+        <img class="news-image" src="Images/july311.avif" alt="Camp July '21" />
+        <div class="news-content">
+        <p><strong>July 2021 (7/31) Love Me Love Sports Camp</strong><br>
+        <em>July 31st, 2021</em></p>
+        </div>
+    </div>
+
+    <!-- Modal for Card 18 -->
+    <div id="modal18" class="modal">
+        <div class="modal-content">
+        <span class="close" onclick="closeModal('modal18')">&times;</span>
+        <h2>July 2021 (7/31) Love Me Love Sports Camp</h2>
+        <p><em>July 31st, 2021</em></p>
+        <hr>
+
+    <!-- Collage Gallery -->
+    <div class="image-gallery">
+        <img src="Images/july311.avif" alt="Event photo 1" onclick="openImageModal(0, 'july31')">
+        <img src="Images/july312.avif" alt="Event photo 2" onclick="openImageModal(1, 'july31')">
+        <img src="Images/july313.avif" alt="Event photo 3" onclick="openImageModal(2, 'july31')">
+        <img src="Images/july314.avif" alt="Event photo 4" onclick="openImageModal(3, 'july31')">
+        <img src="Images/july315.avif" alt="Event photo 5" onclick="openImageModal(4, 'july31')">
+        <img src="Images/july316.avif" alt="Event photo 6" onclick="openImageModal(5, 'july31')">
+        <img src="Images/july317.avif" alt="Event photo 7" onclick="openImageModal(6, 'july31')">
+        <img src="Images/july318.avif" alt="Event photo 8" onclick="openImageModal(7, 'july31')">
+        <img src="Images/july319.avif" alt="Event photo 9" onclick="openImageModal(8, 'july31')">
+        <img src="Images/july3110.avif" alt="Event photo 10" onclick="openImageModal(9, 'july31')">
+        <img src="Images/july3111.avif" alt="Event photo 11" onclick="openImageModal(10, 'july31')">
+        <img src="Images/july3112.avif" alt="Event photo 12" onclick="openImageModal(11, 'july31')">
+        <img src="Images/july3113.avif" alt="Event photo 13" onclick="openImageModal(12, 'july31')">
+        <img src="Images/july3114.avif" alt="Event photo 14" onclick="openImageModal(13, 'july31')">
+        <img src="Images/july3115.avif" alt="Event photo 15" onclick="openImageModal(14, 'july31')">
+        <img src="Images/july3116.avif" alt="Event photo 16" onclick="openImageModal(15, 'july31')">
+        <img src="Images/july3117.avif" alt="Event photo 17" onclick="openImageModal(16, 'july31')">
+        <img src="Images/july3118.avif" alt="Event photo 18" onclick="openImageModal(17, 'july31')">
+        <img src="Images/july3119.avif" alt="Event photo 19" onclick="openImageModal(18, 'july31')">
+        </div>          
+    </div>
+</div>
+
+    <!---Card 19-->
+    <div class="news-card" onclick="openModal('modal19')">
+        <img class="news-image" src="Images/july1.avif" alt="Camp July '21" />
+        <div class="news-content">
+        <p><strong>July 2021 (7/24) Love Me Love Sports Camp</strong><br>
+        <em>July 24th, 2021</em></p>
+        </div>
+    </div>
+
+    <!-- Modal for Card 19 -->
+    <div id="modal19" class="modal">
+        <div class="modal-content">
+        <span class="close" onclick="closeModal('modal19')">&times;</span>
+        <h2>July 2021 (7/24) Love Me Love Sports Camp</h2>
+        <p><em>July 24th, 2021</em></p>
+        <hr>
+
+    <!-- Collage Gallery -->
+    <div class="image-gallery">
+        <img src="Images/july1.avif" alt="Event photo 1" onclick="openImageModal(0, 'july')">
+        <img src="Images/july2.avif" alt="Event photo 2" onclick="openImageModal(1, 'july')">
+        <img src="Images/july3.avif" alt="Event photo 3" onclick="openImageModal(2, 'july')">
+        <img src="Images/july4.avif" alt="Event photo 4" onclick="openImageModal(3, 'july')">
+        <img src="Images/july5.avif" alt="Event photo 5" onclick="openImageModal(4, 'july')">
+        <img src="Images/july6.avif" alt="Event photo 6" onclick="openImageModal(5, 'july')">
+        <img src="Images/july7.avif" alt="Event photo 7" onclick="openImageModal(6, 'july')">
+        <img src="Images/july8.avif" alt="Event photo 8" onclick="openImageModal(7, 'july')">
+        <img src="Images/july9.avif" alt="Event photo 9" onclick="openImageModal(8, 'july')">
+        <img src="Images/july10.avif" alt="Event photo 10" onclick="openImageModal(9, 'july')">
+        <img src="Images/july11.avif" alt="Event photo 11" onclick="openImageModal(10, 'july')">
+        <img src="Images/july12.avif" alt="Event photo 12" onclick="openImageModal(11, 'july')">
+        <img src="Images/july12.avif" alt="Event photo 13" onclick="openImageModal(12, 'july')">
+        </div>          
+    </div>
+</div>
+
+    <!---Card 20-->
+    <div class="news-card" onclick="openModal('modal20')">
+        <img class="news-image" src="Images/20201.avif" alt="Camp June '20" />
+        <div class="news-content">
+        <p><strong>June 2020 Love Me Love Sports Basketball Camp</strong><br>
+        <em>June 8th, 2020</em></p>
+        </div>
+    </div>
+
+    <!-- Modal for Card 20 -->
+    <div id="modal20" class="modal">
+        <div class="modal-content">
+        <span class="close" onclick="closeModal('modal20')">&times;</span>
+        <h2>June 2020 Love Me Love Sports Basketball Camp</h2>
+        <p><em>June 8th, 2020</em></p>
+        <hr>
+    
+    <!-- Collage Gallery -->
+    <div class="image-gallery">
+        <img src="Images/20201.avif" alt="Event photo 1" onclick="openImageModal(0, '2020')">
+        <img src="Images/20202.avif" alt="Event photo 2" onclick="openImageModal(1, '2020')">
+        <img src="Images/20203.avif" alt="Event photo 3" onclick="openImageModal(2, '2020')">
+        <img src="Images/20204.avif" alt="Event photo 4" onclick="openImageModal(3, '2020')">
+        <img src="Images/20205.avif" alt="Event photo 5" onclick="openImageModal(4, '2020')">
+        <img src="Images/20206.avif" alt="Event photo 6" onclick="openImageModal(5, '2020')">
+        </div>          
+    </div>
+</div>
+
+    <!---Card 21-->
+    <div class="news-card" onclick="openModal('modal21')">
+        <img class="news-image" src="Images/20191.webp" alt="Camp June '19" />
+        <div class="news-content">
+        <p><strong>November 2019 Love Me Love Sports Basketball Camp</strong><br>
+        <em>November 11th, 2019</em></p>
+        </div>
+    </div>
+
+    <!-- Modal for Card 21 -->
+    <div id="modal21" class="modal">
+        <div class="modal-content">
+        <span class="close" onclick="closeModal('modal21')">&times;</span>
+        <h2>November 2019 Love Me Love Sports Basketball Camp</h2>
+        <p><em>November 11th, 2019</em></p>
+        <hr>
+    
+    <!-- Collage Gallery -->
+    <div class="image-gallery">
+        <img src="Images/20191.webp" alt="Event photo 1" onclick="openImageModal(0, '2019')">
+        <img src="Images/20192.webp" alt="Event photo 2" onclick="openImageModal(1, '2019')">
+        <img src="Images/20193.webp" alt="Event photo 3" onclick="openImageModal(2, '2019')">
+        <img src="Images/20194.webp" alt="Event photo 4" onclick="openImageModal(3, '2019')">
+        <img src="Images/20195.webp" alt="Event photo 5" onclick="openImageModal(4, '2019')">
+        <img src="Images/20196.webp" alt="Event photo 6" onclick="openImageModal(5, '2019')">
+        <img src="Images/20197.webp" alt="Event photo 7" onclick="openImageModal(6, '2019')">
+        <img src="Images/20198.webp" alt="Event photo 8" onclick="openImageModal(7, '2019')">
+        <img src="Images/20199.webp" alt="Event photo 9" onclick="openImageModal(8, '2019')">
+        <img src="Images/201910.webp" alt="Event photo 10" onclick="openImageModal(9, '2019')">
+        <img src="Images/201911.webp" alt="Event photo 11" onclick="openImageModal(10, '2019')">
+        <img src="Images/201912.webp" alt="Event photo 12" onclick="openImageModal(11, '2019')">
+        <img src="Images/201913.webp" alt="Event photo 13" onclick="openImageModal(12, '2019')">
+        <img src="Images/201914.webp" alt="Event photo 14" onclick="openImageModal(13, '2019')">
+        <img src="Images/201915.webp" alt="Event photo 15" onclick="openImageModal(14, '2019')">
+        </div>          
+    </div>
+</div>
+
+     <!---Card 22-->
+     <div class="news-card" onclick="openModal('modal22')">
+        <img class="news-image" src="Images/art1.avif" alt="Camp Aug '19" />
+        <div class="news-content">
+        <p><strong>August 2019 Love Me Love Art Camp</strong><br>
+        <em>August 25th, 2019</em></p>
+        </div>
+    </div>
+
+    <!-- Modal for Card 22 -->
+    <div id="modal22" class="modal">
+        <div class="modal-content">
+        <span class="close" onclick="closeModal('modal22')">&times;</span>
+        <h2>August 2019 Love Me Love Art Camp</h2>
+        <p><em>August 25th, 2019</em></p>
+        <hr>
+
+    <!-- Collage Gallery -->
+    <div class="image-gallery">
+        <img src="Images/art1.avif" alt="Event photo 1" onclick="openImageModal(0, 'art')">
+        <img src="Images/art2.avif" alt="Event photo 2" onclick="openImageModal(1, 'art')">
+        <img src="Images/art3.avif" alt="Event photo 3" onclick="openImageModal(2, 'art')">
+        <img src="Images/art4.avif" alt="Event photo 4" onclick="openImageModal(3, 'art')">
+        <img src="Images/art5.avif" alt="Event photo 5" onclick="openImageModal(4, 'art')">
+        <img src="Images/art6.avif" alt="Event photo 6" onclick="openImageModal(5, 'art')">
+        </div>          
+    </div>
+</div>
+
+    <!---Card 23-->
+    <div class="news-card" onclick="openModal('modal23')">
+        <img class="news-image" src="Images/20181.avif" alt="Camp '18 '19" />
+        <div class="news-content">
+        <p><strong>2018 Love Me Love Sports Basketball Camp</strong><br>
+        <em>August 19th, 2018</em></p>
+        </div>
+    </div>
+
+    <!-- Modal for Card 23 -->
+    <div id="modal23" class="modal">
+        <div class="modal-content">
+        <span class="close" onclick="closeModal('modal23')">&times;</span>
+        <h2>2018 Love Me Love Sports Basketball Camp</h2>
+        <p><em>August 19th, 2018</em></p>
+        <hr>
+
+    <!-- Collage Gallery -->
+    <div class="image-gallery">
+        <img src="Images/20181.avif" alt="Event photo 1" onclick="openImageModal(0, '2019')">
+        <img src="Images/20182.avif" alt="Event photo 2" onclick="openImageModal(1, '2019')">
+        <img src="Images/20183.avif" alt="Event photo 3" onclick="openImageModal(2, '2019')">
+        <img src="Images/20184.avif" alt="Event photo 4" onclick="openImageModal(3, '2019')">
+        <img src="Images/20185.avif" alt="Event photo 5" onclick="openImageModal(4, '2019')">
+        <img src="Images/20186.avif" alt="Event photo 6" onclick="openImageModal(5, '2019')">
+        <img src="Images/20187.avif" alt="Event photo 7" onclick="openImageModal(6, '2019')">
+        <img src="Images/20188.avif" alt="Event photo 8" onclick="openImageModal(7, '2019')">
+        <img src="Images/20189.avif" alt="Event photo 9" onclick="openImageModal(8, '2019')">
+        <img src="Images/201810.avif" alt="Event photo 10" onclick="openImageModal(9, '2019')">
+        <img src="Images/201811.avif" alt="Event photo 11" onclick="openImageModal(10, '2019')">
+        <img src="Images/201812.avif" alt="Event photo 12" onclick="openImageModal(11, '2019')">
+        <img src="Images/201813.avif" alt="Event photo 13" onclick="openImageModal(12, '2019')">
+        <img src="Images/201814.avif" alt="Event photo 14" onclick="openImageModal(13, '2019')">
+        </div>          
+    </div>
+</div>
+
+<!--Place cards before this!-->
+</section>
+
+<!--Modal for Lightbox Images-->
+  <div id="imageModal" class="lightbox">
+    <span class="close-lightbox" onclick="closeImageModal()">&times;</span>
+    <img id="lightboxImg" class="lightbox-image" src="" alt="">
+    <span class="lightbox-prev" onclick="changeImage(-1)">&#10094;</span>
+    <span class="lightbox-next" onclick="changeImage(1)">&#10095;</span>
+  </div>  
+
+  <!-- Newsletter Signup -->
+  <section class="newsletter">
+    <p><strong>Stay Connected! Subscribe to our Newsletter 📫</strong></p>
+    <input type="email" placeholder="Email Address">
+    <button>Submit</button>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div><a href="mailto:admin@lovemeloveus.org">admin@lovemeloveus.org</a></div>
+    <div>+1 (425) 298-7866</div>
+    <div>@lovemeloveus</div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="News.js"></script>
+</body>
+</html>

@@ -1,0 +1,489 @@
+/* -------- Global Styles -------- */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #fff5eb;
+    color: #5e3c29;
+  }
+  
+  .container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 auto;
+  }
+  
+  /* -------- Nav Bar -------- */
+  .nav-bar {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+    background-color: #f9b233;
+    padding: 0 50px;
+    height: auto;
+    overflow: visible;
+    flex-wrap: wrap;
+    margin-top: 0px;
+  }
+  
+  .nav-group {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+  
+  .left-nav,
+  .right-nav {
+    min-width: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 16px;
+  }
+  
+  .logo-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 70px;
+  }  
+
+  .nav-bar a {
+    text-decoration: none;   /* removes underline */
+    color: white;            /* or any nav text color you want */
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: color 0.2s ease;
+  }
+  
+  .nav-bar a:hover {
+    color: #5e3c29;
+    background-color: rgba(255,255,255,0.2);
+    border-radius: 4px;
+    padding: 4px 8px; 
+  }
+  
+  .logo {
+    height: 110px;
+    width: auto;
+    margin-top: -10px;
+    z-index: 2;          /* ensure image sits above white square */
+  }
+  
+  .logo-bg {
+    background-color: white;
+    width: 50px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;  /* optional: for slightly rounded square */
+    margin-top: 10px;   /* align visually if needed */
+    z-index: 1;          /* ensure it's above nav bar background */
+  }
+  
+  /* -------- Tagline Section -------- */
+  .tagline {
+    text-align: center;
+    padding: 40px 20px;
+  }
+  
+  .tagline h1 {
+    font-size: 2.5rem;
+    font-weight: 800;
+    margin-bottom: 20px;
+  }
+  
+  .love1 {
+    color: #FA4032;
+  }
+  
+  .me {
+    color: #FA812F;
+  }
+  
+  .love2 {
+    color: #FAB12F;
+  }
+  
+  .us {
+    color: #f3cd30;
+  }
+  
+  .dot {
+    color: #5e3c29;
+  }
+  
+  .mission {
+    max-width: 1200px;
+    margin: 0 auto -30px;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #5e3c29;
+  }
+  
+  /* -------- Collage Grid (2 tidy rows, variable widths) -------- */
+.image-collage {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-auto-rows: 275px;
+    gap: 10px;
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px 50px;
+  }
+  
+  /* Each image retains native size ratio inside its grid cell */
+  .image-collage img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 4px;
+    background-color: #ccc;
+  }
+  
+  /* Specific layout pattern */
+  .img1 {
+    grid-column: span 2;
+    grid-row: span 1;
+  }
+  .img2 {
+    grid-column: span 1;
+    grid-row: span 1;
+  }
+  .img3 {
+    grid-column: span 3;
+    grid-row: span 1;
+  }
+  .img4 {
+    grid-column: span 3;
+    grid-row: span 1;
+  }
+  .img5 {
+    grid-column: span 2;
+    grid-row: span 1;
+  }
+  .img6 {
+    grid-column: span 1;
+    grid-row: span 1;
+}
+  
+  /* -------- Programs Section -------- */
+  .programs-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 30px;
+    margin: 30px auto;
+    max-width: 1100px;
+    padding: 0 20px 50px;
+  }
+  
+  .program-card {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: left;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    transition: transform 0.2s ease;
+  }
+  
+  .program-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .program-card h3 {
+    margin-top: 0;
+  }
+
+  section h2 {
+    text-align: center;
+    font-size: 2em;
+    margin-top: 60px;
+    margin-bottom: 30px;
+    padding: 0 20px;
+  }
+  
+  
+  .art { background-color: #ffd6cc; }
+  .sports { background-color: #ffe5b4; }
+  .learning { background-color: #fff4cc; }
+  .music { background-color: #fdf2d2; }
+  .baking { background-color: #ffe0b2;}
+  
+  /* -------- Newsletter -------- */
+  .newsletter {
+    background-color: #fff;
+    border: 2px solid #ceb8a7;
+    padding: 20px;
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto 50px;
+    border-radius: 8px;
+    font-size: 1rem;
+    line-height: 1.4;
+  }
+  
+  .newsletter input {
+    padding: 8px;
+    width: 60%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .newsletter button {
+    padding: 8px 12px;
+    background-color: #e98a1e;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  /* -------- Footer -------- */
+  footer {
+    background-color: #f9c873;
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    color: #5e3c29;
+    font-weight: bold;
+    flex-wrap: wrap;
+    text-align: center;
+  }
+  
+  footer a {
+    color: inherit;
+    text-decoration: none;
+  }
+  
+  /* Header */
+  .header-banner {
+    position: relative;
+    height: 160px;
+    overflow: hidden;
+    z-index: 0;
+  }
+  
+  .header-images {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    opacity: 0.7;
+  }
+  
+  .header-images img {
+    flex: 1;
+    object-fit: cover;
+    height: 100%;
+  }
+  
+  .nav-bar {
+    position: relative;
+    z-index: 2;
+  }
+
+  /* Testimonial */
+  .testimonials {
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 0 20px 20px;
+    text-align: center;
+  }
+  
+  .testimonials h2 {
+    font-size: 2em;
+    margin-bottom: 30px;
+    margin-top: 60px;
+    color: #5e3c29;
+  }
+  
+  .testimonial-cards {
+    display: flex;
+    flex-direction: column; /* stack vertically */
+    gap: 20px;
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 0 20px;
+  }  
+  
+  .testimonial-card {
+    background-color: #fffdf9;
+    border-radius: 10px;
+    padding: 20px;
+    font-style: italic;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+  }
+  
+  .testimonial-card span {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+    font-style: normal;
+    color: #5e3c29;
+  }
+
+  .testimonial-card strong {
+    color: #f9b233;
+  }
+
+/* Default: desktop styles */
+.left-nav, .right-nav {
+  display: flex;
+}
+
+.hamburger {
+  display: none;
+}
+
+.mobile-menu {
+  display: none;
+}
+
+  /* Divider */
+  .section-divider {
+    border: none;
+    border-top: 1px solid #ccc;
+    margin: 60px auto;
+    max-width: 70%;
+    margin-top: 40px;
+  }
+  
+/* FOR MOBILE LAYOUT */
+@media (max-width: 768px) {
+  .nav-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    background-color: #f9b233;
+    position: relative;
+    height: 60px;
+  }
+
+  .left-nav,
+  .right-nav {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    min-width: 0;
+  }
+
+  .logo-nav {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+  }
+
+  .logo {
+    height: 110px;
+  }
+
+  .logo-bg {
+    width: 50px;
+    height: 35px;
+  }
+
+  .header-banner {
+    height: 120px; /* Reduce height for mobile */
+  }
+
+  .header-images {
+    display: flex;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .header-images img {
+    width: 33.33%;         /* 🟡 3 equal images side-by-side */
+    height: 100%;
+    object-fit: cover;
+  }
+
+  /* Each image retains native size ratio inside its grid cell */
+  .image-collage {
+    grid-auto-rows: 160px; /* or even 160px if you want it shorter */
+    margin-bottom: -20px;
+    margin-top: 20px;
+  }
+
+  .image-collage img {
+    aspect-ratio: 3 / 4; /* Slightly shorter on mobile */
+  }
+
+  .left-nav, .right-nav {
+    display: none;
+  }
+
+  .hamburger {
+    display: block;
+    order: -1;
+    font-size: 2rem;
+    cursor: pointer;
+    color: white;
+  }
+
+  .mobile-menu {
+    display: none;
+    flex-direction: column;
+    background-color: #f9b233;
+    padding: 10px 20px;
+  }
+
+  .mobile-menu.show {
+    display: flex;
+  }
+
+  .mobile-menu a {
+    padding: 10px 0;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    border-bottom: 1px solid rgba(255,255,255,0.3);
+  }
+
+  .newsletter {
+    max-width: 643px;
+    width: 88%;
+    margin: 0 auto 60px;
+    padding: 20px;
+    background-color: #fff;
+    border: 2px solid #ceb8a7;
+    border-radius: 8px;
+    box-sizing: border-box;
+  }
+
+  .newsletter input,
+  .newsletter button {
+    margin-top: 10px;
+    width: 100% !important;
+    box-sizing: border-box;
+  }
+
+  footer {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px; /* adds space between items */
+    padding: 20px 10px; /* more vertical, less horizontal padding */
+    text-align: center;
+  }
+
+  footer div {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .testimonials h2 {
+    margin-top: -5px;
+    font-size: 1.6em;
+  }
+
+  section h2 {
+    margin-top: -10px;
+    font-size: 1.6em;
+  }
+}
+
+
