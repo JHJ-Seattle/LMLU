@@ -46,21 +46,21 @@ body {
     gap: 20px;
   }
 
-.nav-bar a {
+  .nav-bar a {
     text-decoration: none;
     color: white;
     font-weight: bold;
     font-size: 1rem;
     cursor: pointer;
-    transition: color 0.2s ease;
+    transition: color 0.2s ease, background-color 0.2s ease;
+    padding: 4px 8px; /* moved from hover to base */
+    border-radius: 4px; /* ensure consistent radius */
   }
-
-.nav-bar a:hover {
+  
+  .nav-bar a:hover {
     color: #5e3c29;
     background-color: rgba(255,255,255,0.2);
-    border-radius: 4px;
-    padding: 4px 8px; 
-  }
+  }  
 
 .logo-nav {
     display: flex;
@@ -280,6 +280,16 @@ footer a {
     cursor: pointer;
   }
   
+  @media (max-width: 1100px) and (min-width: 769px) {
+    .nav-bar a {
+      font-size: 0.9rem; /* slightly smaller text */
+      padding: 2px 6px;  /* slightly less padding */
+    }
+  
+    .nav-group {
+      gap: 10px;
+    }
+  } 
 
 @media (max-width: 768px) {
     .nav-bar {
