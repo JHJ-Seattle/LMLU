@@ -39,6 +39,124 @@ window.onclick = function(event) {
 
 // ========== LIGHTBOX GALLERY FIX ========== //
 const galleries = {
+  "baking, 12/17": [
+    "Images/Baking (12:17) - 1.jpg", "Images/Baking (12:17) - 2.jpg", "Images/Baking (12:17) - 3.jpg", "Images/Baking (12:17) - 4.jpg",
+    "Images/Baking (12:17) - 5.jpg", "Images/Baking (12:17) - 6.jpg", "Images/Baking (12:17) - 7.jpg", "Images/Baking (12:17) - 8.jpg",
+    "Images/Baking (12:17) - 9.jpg", "Images/Baking (12:17) - 10.jpg"
+  ],
+  "baking, 12/10": [
+    "Images/Baking (12:10) - 1.jpg", "Images/Baking (12:10) - 2.jpg", "Images/Baking (12:10) - 3.jpg", "Images/Baking (12:10) - 4.jpg",
+    "Images/Baking (12:10) - 5.jpg", "Images/Baking (12:10) - 6.jpg", "Images/Baking (12:10) - 7.jpg", "Images/Baking (12:10) - 8.jpg"
+  ],
+  "baking, 12/3": [
+    "Images/Baking (12:3) - 1.jpg", "Images/Baking (12:3) - 2.jpg", "Images/Baking (12:3) - 3.jpg", "Images/Baking (12:3) - 4.jpg",
+    "Images/Baking (12:3) - 5.jpg", "Images/Baking (12:3) - 6.jpg", "Images/Baking (12:3) - 7.jpg"
+  ],
+  "baking, 11/12": [
+    "Images/Baking (11:12) - 1.jpg", "Images/Baking (11:12) - 2.jpg", "Images/Baking (11:12) - 3.jpg", "Images/Baking (11:12) - 4.jpg",
+    "Images/Baking (11:12) - 5.jpg", "Images/Baking (11:12) - 6.jpg", "Images/Baking (11:12) - 7.jpg", "Images/Baking (11:12) - 8.jpg",
+    "Images/Baking (11:12) - 9.jpg", "Images/Baking (11:12) - 10.jpg"
+  ],
+  "baking, 10/15": [
+    "Images/Baking (10:15) - 1.jpg", "Images/Baking (10:15) - 2.jpg", "Images/Baking (10:15) - 3.jpg", "Images/Baking (10:15) - 4.jpg",
+    "Images/Baking (10:15) - 5.jpg", "Images/Baking (10:15) - 6.jpg", "Images/Baking (10:15) - 7.jpg", "Images/Baking (10:15) - 8.jpg",
+    "Images/Baking (10:15) - 9.jpg"
+  ],
+  "baking, 10/8": [
+    "Images/Baking (10:8) - 1.jpg", "Images/Baking (10:8) - 2.jpg", "Images/Baking (10:8) - 3.jpg", "Images/Baking (10:8) - 4.jpg",
+    "Images/Baking (10:8) - 5.jpg", "Images/Baking (10:8) - 6.jpg", "Images/Baking (10:8) - 7.jpg", "Images/Baking (10:8) - 8.jpg",
+    "Images/Baking (10:8) - 9.jpg", "Images/Baking (10:8) - 10.jpg", "Images/Baking (10:8) - 11.jpg"
+  ],
+  "baking, 9/24": [
+    "Images/Baking (9:24) - 1.jpg", "Images/Baking (9:24) - 2.jpg", "Images/Baking (9:24) - 3.jpg", "Images/Baking (9:24) - 4.jpg",
+    "Images/Baking (9:24) - 5.jpg"
+  ],
+  "music, 8/9": [
+    "Images/Music (8:9) - 1.jpg", "Images/Music (8:9) - 2.jpg", "Images/Music (8:9) - 3.jpg", "Images/Music (8:9) - 4.jpg",
+    "Images/Music (8:9) - 5.jpg", "Images/Music (8:9) - 6.jpg", "Images/Music (8:9) - 7.jpg", "Images/Music (8:9) - 8.jpg",
+    "Images/Music (8:9) - 9.jpg", "Images/Music (8:9) - 10.jpg", "Images/Music (8:9) - 11.jpg", "Images/Music (8:9) - 12.jpg",
+    "Images/Music (8:9) - 13.jpg", "Images/Music (8:9) - 14.jpg", "Images/Music (8:9) - 15.jpg", "Images/Music (8:9) - 16.jpg",
+    "Images/Music (8:9) - 17.jpg", "Images/Music (8:9) - 18.jpg", "Images/Music (8:9) - 19.jpg", "Images/Music (8:9) - 20.jpg",
+    "Images/Music (8:9) - 21.jpg", "Images/Music (8:9) - 22.jpg", "Images/Music (8:9) - 23.jpg", "Images/Music (8:9) - 24.jpg"
+  ],
+  "sports, 7/26": [
+    "Images/Sports (7:26) - 1.jpg", "Images/Sports (7:26) - 2.jpg", "Images/Sports (7:26) - 3.jpg", "Images/Sports (7:26) - 4.jpg",
+    "Images/Sports (7:26) - 5.jpg", "Images/Sports (7:26) - 6.jpg", "Images/Sports (7:26) - 7.jpg", "Images/Sports (7:26) - 8.jpg",
+    "Images/Sports (7:26) - 9.jpg", "Images/Sports (7:26) - 10.jpg", "Images/Sports (7:26) - 11.jpg", "Images/Sports (7:26) - 12.jpg",
+    "Images/Sports (7:26) - 13.jpg", "Images/Sports (7:26) - 14.jpg", "Images/Sports (7:26) - 15.jpg", "Images/Sports (7:26) - 16.jpg",
+    "Images/Sports (7:26) - 17.jpg", "Images/Sports (7:26) - 18.jpg", "Images/Sports (7:26) - 19.jpg", "Images/Sports (7:26) - 20.jpg"
+  ],
+  "silent auction": [
+    "Images/SilentAuction1.jpg", "Images/SilentAuction2.jpg", "Images/SilentAuction3.jpg", "Images/SilentAuction4.jpg",
+    "Images/SilentAuction5.jpg", "Images/SeniorGrad1.jpg", "Images/SeniorGrad2.jpg", "Images/SeniorGrad3.jpg",
+    "Images/SeniorGrad4.jpg", "Images/SeniorGrad5.jpg", "Images/SeniorGrad6.jpg", "Images/SeniorGrad7.jpg",
+    "Images/SeniorGrad8.jpg", "Images/SeniorGrad9.jpg", "Images/SeniorGrad10.jpg", "Images/SeniorGrad11.jpg",
+    "Images/SeniorGrad12.jpg", "Images/SeniorGrad13.jpg", "Images/SeniorGrad14.jpg", "Images/SeniorGrad15.jpg"
+  ],
+  "spring": [
+    "Images/SpRetreat1.jpg", "Images/SpRetreat2.jpg", "Images/SpRetreat3.jpg", "Images/SpRetreat4.jpg",
+    "Images/SpRetreat5.jpg", "Images/SpRetreat6.jpg", "Images/SpRetreat7.jpg", "Images/SpRetreat8.jpg",
+    "Images/SpRetreat9.jpg", "Images/SpRetreat10.jpg", "Images/SpRetreat11.jpg", "Images/SpRetreat12.jpg",
+    "Images/SpRetreat13.jpg", "Images/SpRetreat14.jpg", "Images/SpRetreat15.jpg", "Images/SpRetreat16.jpg",
+    "Images/SpRetreat17.jpg", "Images/SpRetreat18.jpg", "Images/SpRetreat19.jpg", "Images/SpRetreat20.jpg",
+    "Images/SpRetreat21.jpg", "Images/SpRetreat22.jpg", "Images/SpRetreat23.jpg", "Images/SpRetreat24.jpg",
+    "Images/SpRetreat25.jpg"
+  ],
+  "baking, 4/17": [
+    "Images/Baking (4:17) - 1.jpg", "Images/Baking (4:17) - 2.jpg", "Images/Baking (4:17) - 3.jpg", "Images/Baking (4:17) - 4.jpg",
+    "Images/Baking (4:17) - 5.jpg", "Images/Baking (4:17) - 6.jpg", "Images/Baking (4:17) - 7.jpg", "Images/Baking (4:17) - 8.jpg",
+    "Images/Baking (4:17) - 9.jpg", "Images/Baking (4:17) - 10.jpg", "Images/Baking (4:17) - 11.jpg", "Images/Baking (4:17) - 12.jpg",
+    "Images/Baking (4:17) - 13.jpg", "Images/Baking (4:17) - 14.jpg", "Images/Baking (4:17) - 15.jpg", "Images/Baking (4:17) - 16.jpg",
+    "Images/Baking (4:17) - 17.jpg", "Images/Baking (4:17) - 18.jpg", "Images/Baking (4:17) - 19.jpg", "Images/Baking (4:17) - 20.jpg",
+    "Images/Baking (4:17) - 21.jpg"
+  ],
+  "baking, 3/27": [
+    "Images/Baking (3:27) - 1.jpg", "Images/Baking (3:27) - 2.jpg", "Images/Baking (3:27) - 3.jpg", "Images/Baking (3:27) - 4.jpg",
+    "Images/Baking (3:27) - 5.jpg", "Images/Baking (3:27) - 6.jpg", "Images/Baking (3:27) - 7.jpg", "Images/Baking (3:27) - 8.jpg",
+    "Images/Baking (3:27) - 9.jpg", "Images/Baking (3:27) - 10.jpg", "Images/Baking (3:27) - 11.jpg", "Images/Baking (3:27) - 12.jpg",
+  ],
+  "canine": [
+    "Images/Canine1.jpg", "Images/Canine2.jpg", "Images/Canine3.jpg", "Images/Canine4.jpg",
+    "Images/Canine5.jpg", "Images/Canine6.jpg", "Images/Canine7.jpg", "Images/Canine8.jpg",
+    "Images/Canine9.jpg", "Images/Canine10.jpg", "Images/Art (3:22) - 1.jpg", "Images/Art (3:22) - 2.jpg",
+    "Images/Art (3:22) - 3.jpg", "Images/Art (3:22) - 4.jpg", "Images/Art (3:22) - 5.jpg", "Images/Art (3:22) - 6.jpg",
+    "Images/Art (3:22) - 7.jpg", "Images/Art (3:22) - 8.jpg", "Images/Art (3:22) - 9.jpg", "Images/Art (3:22) - 10.jpg",
+    "Images/Art (3:22) - 11.jpg", "Images/Art (3:22) - 12.jpg", "Images/Art (3:22) - 13.jpg"
+  ],
+  "baking, 3/13": [
+    "Images/Baking (3:13) - 1.jpg", "Images/Baking (3:13) - 2.jpg", "Images/Baking (3:13) - 3.jpg", "Images/Baking (3:13) - 4.jpg",
+    "Images/Baking (3:13) - 5.jpg", "Images/Baking (3:13) - 6.jpg", "Images/Baking (3:13) - 7.jpg", "Images/Baking (3:13) - 8.jpg"
+  ],
+  "baking, 3/6": [
+    "Images/Baking (3:6) - 1.jpg", "Images/Baking (3:6) - 2.jpg", "Images/Baking (3:6) - 3.jpg", "Images/Baking (3:6) - 4.jpg",
+    "Images/Baking (3:6) - 5.jpg", "Images/Baking (3:6) - 6.jpg", "Images/Baking (3:6) - 7.jpg", "Images/Baking (3:6) - 8.jpg",
+    "Images/Baking (3:6) - 9.jpg", "Images/Baking (3:6) - 10.jpg", "Images/Baking (3:6) - 11.jpg", "Images/Baking (3:6) - 12.jpg",
+    "Images/Baking (3:6) - 13.jpg", "Images/Baking (3:6) - 14.jpg", "Images/Baking (3:6) - 15.jpg", "Images/Baking (3:6) - 16.jpg",
+    "Images/Baking (3:6) - 17.jpg", "Images/Baking (3:6) - 18.jpg"
+  ],
+  "baking, 2/27": [
+    "Images/Baking (2:27) - 1.jpg", "Images/Baking (2:27) - 2.jpg", "Images/Baking (2:27) - 3.jpg", "Images/Baking (2:27) - 4.jpg",
+    "Images/Baking (2:27) - 5.jpg", "Images/Baking (2:27) - 6.jpg", "Images/Baking (2:27) - 7.jpg", "Images/Baking (2:27) - 8.jpg",
+    "Images/Baking (2:27) - 9.jpg", "Images/Baking (2:27) - 10.jpg", "Images/Baking (2:27) - 11.jpg", "Images/Baking (2:27) - 12.jpg",
+    "Images/Baking (2:27) - 13.jpg", "Images/Baking (2:27) - 14.jpg", "Images/Baking (2:27) - 15.jpg", "Images/Baking (2:27) - 16.jpg",
+    "Images/Baking (2:27) - 17.jpg", "Images/Baking (2:27) - 18.jpg"
+  ],
+  "baking, 1/16": [
+    "Images/Baking (1:16) - 1.jpg", "Images/Baking (1:16) - 2.jpg", "Images/Baking (1:16) - 3.jpg", "Images/Baking (1:16) - 4.jpg",
+    "Images/Baking (1:16) - 5.jpg", "Images/Baking (1:16) - 6.jpg", "Images/Baking (1:16) - 7.jpg", "Images/Baking (1:16) - 8.jpg",
+  ],
+  "baking, 1/9": [
+    "Images/Baking (1:9) - 1", "Images/Baking (1:9) - 2.jpg", "Images/Baking (1:9) - 3.jpg", "Images/Baking (1:9) - 4.jpg",
+    "Images/Baking (1:9) - 5.jpg", "Images/Baking (1:9) - 6.jpg", "Images/Baking (1:9) - 7.jpg", "Images/Baking (1:9) - 8.jpg",
+    "Images/Baking (1:9) - 9.jpg", "Images/Baking (1:9) - 10.jpg", "Images/Baking (1:9) - 11.jpg", "Images/Baking (1:9) - 12.jpg",
+    "Images/Baking (1:9) - 13.jpg"
+  ],
+  music24: [
+    "Images/Music1.jpg", "Images/Music2.jpg", "Images/Music3.jpg", "Images/Music4.jpg",
+    "Images/Music5.jpg", "Images/Music6.jpg", "Images/Music7.jpg", "Images/Music8.jpg",
+    "Images/Music9.jpg", "Images/Music10.jpg", "Images/Music11.jpg", "Images/Music12.jpg",
+    "Images/Music13.jpg", "Images/Music14.jpg", "Images/Music15.jpg"
+  ],
   care: [
     "Images/care1.avif", "Images/care2.avif", "Images/care3.avif", "Images/care4.avif",
     "Images/care5.avif", "Images/care6.avif", "Images/care7.avif", "Images/care8.avif",
